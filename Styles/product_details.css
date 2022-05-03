@@ -1,0 +1,9 @@
+#top{
+    display: flex;
+}
+#topleft{
+    width: 50%;
+}
+#topright{
+    width: 50%;
+}
