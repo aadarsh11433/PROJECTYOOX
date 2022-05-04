@@ -15,9 +15,6 @@ function moveToDiv(a,b){
         let Price = document.createElement("p")
         
         
-        
-        
-        
         let Off = document.createElement("p")
         
         
@@ -52,4 +49,4 @@ function moveTo(data){
 
 
 
-export {moveToDiv}
+export {moveToDiv, moveTo}
