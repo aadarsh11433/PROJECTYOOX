@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@700&family=PT+Sans&display=swap');
+#nav1{
+    display: flex;
+    justify-content: space-around;
+    height: 30px;
+    border-bottom: 0.5px solid rgb(182, 181, 181);
+}
+
+#nav2{
+    width: 70%;
+    display: flex;
+    height: 60px;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 0%;
+    justify-content: space-between;
+}
+#d2{
+    height: 100%;
+    width: 100px;
+    margin-right: 200px;
+    padding: 5px;
+}
+a,button{
+    color: black;
+    font-size: 15px;
+    border: none;
+}
+*{
+    font-family:Montserrat, sans-serif;
+}
+#d3,#d1{
+    display: flex;
+    gap: 20px;
+}
+/* LOGIN */
+body{
+    font-family:Montserrat, sans-serif;
+}
+.form-popup {
+    display: none;
+    position: relative;
+    /* margin-left: 800px; */
+    bottom: 0;
+    right: 250px;
+    z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+    max-width: 300px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid;
+
+}
+
+/* Full-width input fields */
+.form-container input[type=text],
+.form-container input[type=password] {
+    width: 85%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+#open {
+    border: none;
+    background-color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+#gog{
+    padding: 20px;
+    width: 100px;
+    text-align: center;
+    border: 0.5px solid grey;
+    background-color: white;
+    cursor: pointer;
+}
+#close{
+    margin-left: 90%;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+#login{
+    width: 80%;
+    background-color: rgb(36, 36, 36);
+    color: white;
+    border: none;
+    padding: 10px;
+}
+
+
+#main{
+    width: 100%;
+    display: flex;
+    /* border: 1px solid red; */
+    height: 1px;
+    /* position: absolute; */
+    justify-content: space-between;
+}
+#t{
+    /* background-color: aqua; */
+    width: 60%;
+}
