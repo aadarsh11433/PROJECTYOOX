@@ -15,9 +15,6 @@ function moveToDiv(a,b){
         let Price = document.createElement("p")
         
         
-        
-        
-        
         let Off = document.createElement("p")
         
         
@@ -122,9 +119,5 @@ function recentDetailedProduct(data){
     window.location.href = "product_details.html"
     localStorage.setItem("detailed_product",JSON.stringify(data))
 }
-
-
-
-
 
 export {moveToDiv,appendRecent,recentDetailedProduct}
