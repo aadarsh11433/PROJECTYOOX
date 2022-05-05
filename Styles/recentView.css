@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@700&family=PT+Sans&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+#today{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+
+    justify-content: center;
+    
+}
