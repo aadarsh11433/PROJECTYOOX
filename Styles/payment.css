@@ -1,0 +1,39 @@
+body{
+    background-color: #f3f3f3;
+}
+
+#header{
+    margin: -8px;
+    margin-bottom: 10px;
+    height: 60px;
+    background-color: black;
+}
+#address_price{
+    width: 70%;
+    margin: auto;
+    border: 1px solid black;
+    display: flex;
+    gap:10px;
+}
+#address{
+    width: 70%;
+    border: 1px solid gray;
+}
+#payment_details{
+width: 30%;
+border: 1px solid gray;
+}
+#footer{
+    background-color: #333333;
+    margin: -8px;
+    
+}
+#footer p{
+    text-align: center;
+}
+#footer p:first-child{
+    color: white;
+}
+#footer  p:first-child span:first-child{
+    cursor: pointer;
+}
