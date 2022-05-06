@@ -1,0 +1,45 @@
+#filters{
+    width: 30%;
+    /* height: 400px; */
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+}
+#filters >div{
+    /* height: 30px; */
+    padding: 4px 0px 4px 10px;
+    background-color: #f5f5f5;
+    margin: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+#filters > div ul{
+    display:none;
+    list-style:none;
+    background-color: white;
+}
+#textinsize{
+    background-color: rgb(249, 244, 244);
+    display: none;
+}
+#size_filter ul{
+    display: grid;
+    grid-template-columns: repeat(3,28%);
+    gap: 2px;
+    background-color: red;
+}
+#size_filter ul li{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#li_in_price span:last-child {
+    margin-left: 40px;
+   color: red;
+}
+.pricefill{
+    width: 15%;
+    margin-left: 2px;
+}

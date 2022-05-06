@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./navbar.css">
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <title>MYOOX</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@700&family=PT+Sans&display=swap');
+        #box {
+            margin: auto;
+            width: 30%;
+            text-align: center;
+        }
+        .fa {
+            font-size: 25px;
+            /* width: 380px; */
+            text-align: center;
+            text-decoration: none;
+            margin: auto;
+        }
+
+        .fa-facebook {
+            margin-left: 10px;
+            background: #3B5998;
+            color: white;
+        }
+
+        #google {
+            width: 400px;
+            background-color: white;
+            border: 0.5px solid grey;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .small {
+            font-size: 12px;
+            text-align: left;
+            font-family: SourceSansPro, sans-serif;
+        }
+
+        p~input {
+            background-color: #f6f6f6;
+            border: none;
+            padding: 12px;
+            width: 380px;
+            margin: 10px;
+            text-align: left;
+        }
+
+        #register {
+            background-color: #333333;
+            color: white;
+            width: 400px;
+            padding: 10px;
+            margin: 10px;
+            border: none;
+            text-align: center;
+        }
+
+        #upbox {
+            height: 170px;
+            width: 100%;
+            background-color: #f6f6f6;
+            text-align: center;
+            padding: 10px;
+            line-height: 8px;
+        }
+
+        #fb {
+            background-color: #3B5998;
+            border: none;
+            width: 400px;
+            margin: 10px;
+            color: white;
+            padding: 10px;
+        }
+
+        #downbox {
+            width: 100%;
+            height: 120px;
+            background-color: #333333;
+            text-align: center;
+            color: white;
+            padding: 40px;
+        }
+
+        body {
+            font-family: Montserrat, sans-serif;
+            font-size: 20px;
+        }
+
+        #r {
+            font-style: italic;
+            font-family: SourceSansProBold, sans-serif;
+            display: flex;
+            width: 400px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 15px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+
+    </div>
+
+
+
+    <hr style="border: 4px dashed #333333; margin-bottom: 0%;">
+    <div id="upbox">
+        <h4>MYOOX</h4>
+        <p>REGISTRATION</p>
+        <p style="font-size: 15px; font-family: SourceSansPro, sans-serif;">Take advantage of a faster checkout and
+            enjoy promotions for registered customers only</p>
+        <a href="#" style="color: black; font-weight: bold;">Discover all the benefits</a>
+    </div>
+    <div id="box">
+        <p>REGISTER WITH YOUR SOCIAL MEDIA ACCOUNT</p>
+        <button id="fb"> <a href="#" class="fa fa-facebook"></a><br></button>
+        <button id="google"><img width="20px" style="margin-bottom:3px; margin-right:5px" alt="Google sign-in"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" /></button>
+        <form id="signupf">
+            <p>OR WITH YOUR EMAIL</p>
+            <input type="text" placeholder="FIRST NAME*" id="fname" required="required"><br>
+            <input type="text" placeholder="LAST NAME*" id="lname" required="required"><br>
+            <input type="text" placeholder="EMAIL*" id="email" required="required"><br>
+            <p id="error" style="color: red; margin-top: -10px;"></p>
+            <input type="text" placeholder="PASSWORD*" id="pass" required="required"><br>
+
+            <p class="small">Personalize your shopping experience.</p>
+            <div id="r">
+                <input type="radio" name="JTP" id="female" value="female">female
+                <input type="radio" name="JTP" id="male" value="male">male
+            </div>
+
+            <p class="small">If you are over 18 years old, celebrate your birthday with us: We have a surprise for you.
+            </p>
+            <input type="text" placeholder="DATE OF BIRTH" id="bdate" required="required">
+            <p style="text-align: left;">CELL PHONE</p> <input type="number" placeholder="+91" id="mobile"
+                required="required" />
+            <button class="small" style="background-color: #f6f6f6; border: none; font-family: SourceSansProItalic;">I
+                declare that I have read and accept the <u>MYOOX Terms and Condition of Use</u></button>
+            <div style="display: flex; margin: 5px;">
+                <div><input type="checkbox" required="required"></div>
+                <div class="small"> I agree to the use of my personal data in order to be updated on new arrivals,
+                    informed
+                    about exclusive items and contacted as part of targeted marketing initiatives related to services
+                    offered by YOOX.
+                    By analyzing my personal data, order history and browsing habits, YOOX can improve my shopping
+                    experience with suggestions that correspond to my interests.
+                    For further information, please consult the Privacy Policy.</div>
+            </div>
+            <input type="submit" value="REGISTER" id="register">
+        </form>
+
+    </div>
+
+    <hr style="border: 4px dashed #333333; margin-bottom: 0%;margin-top: 100px;">
+    <div id="downbox">
+        <p style="font-size: 12px;">POWERED BY YOOX NET-A-PORTER GROUP - COPYRIGHT © 2000-2022 YOOX NET-A-PORTER GROUP
+            S.P.A. - ALL RIGHTS RESERVED - SIAE LICENCE # 401/I/526</p>
+        <p style="font-size: 10px;">LEGAL AREA / PRIVACY POLICY</p>
+    </div>
+
+</body>
+
+</html>
+
+<script src="/register.js" type="module">
+</script>
+
+    
