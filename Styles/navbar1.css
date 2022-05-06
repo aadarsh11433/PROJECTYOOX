@@ -1,0 +1,136 @@
+#navbar{
+   
+    background-color: white;
+   
+   height: 108px;
+   width: 100%;
+}
+body{
+   background-color: #E6E6FA;
+}
+
+#options{
+   display: flex;
+   gap: 20px;
+   width: 100%;
+   height: 50px;
+  margin: auto;
+
+   margin-top: -10px;
+  justify-content: space-between;
+   border: 1px solid #DCDCDC;
+  
+}
+#options2{
+   display: flex;
+   gap: 20px;
+   width: 80%;
+  height: 70px;
+   margin-left: 150px;
+   justify-content: space-between;
+}
+.div1{
+   display: flex;
+   text-decoration: underline;
+   margin-left: 140px;
+  
+  
+
+}
+#selecticon{
+   margin-top: 11px;
+   margin-left: 1px;
+   
+}
+.div1>h4{
+   margin-left: 20px;
+   font-size: 11.4px;
+   font-family: Montserrat, sans-serif;
+
+   
+}
+.div2{
+   display: flex;
+   text-decoration: underline;
+   margin-right: 110px;
+   
+}
+.div2>h4{
+   margin-left: 20px;
+   font-family: Montserrat, sans-serif;
+   font-size: 11.4px;
+}
+#pen{
+   margin-right: 3px;
+}
+#lock{
+   margin-right: 3px;
+}
+.div3{
+   display: flex;
+   
+   
+   
+}
+.div3>h4{
+   margin-left: 20px;
+   font-family: Montserrat, sans-serif;
+   font-size: 13px;
+   
+}
+
+#searchicon{
+  margin-right: 62px;
+  margin-top: 18px;
+  font-size: 25px;
+
+  
+}
+#hearticon{
+   margin-right: 60px;
+   font-size: 25px;
+   margin-top: 18px;
+}
+#bagicon{
+   font-size: 25px;
+   margin-top: 18px;
+}
+#logo{
+   font-size: 34px;
+   font-weight: bold;
+   margin-top: 6px;
+   font-family: Montserrat, sans-serif;
+   
+}
+
+a:hover{
+   cursor: pointer;
+
+ }
+a{
+   text-decoration: none;
+   color: #333333;
+   
+}
+.anchor{
+   color: #FFFFFF;
+}
+
+
+.hover1{
+   -webkit-transition: color 0s;
+   transition: color 0s;
+}
+.hover1:hover {
+   background-color: #DCDCDC;
+}
+
+
+
+#logoo{
+   height: 38px;
+   width: 116px;
+   margin-top: 2px;
+   margin-left: -100px;
+
+}

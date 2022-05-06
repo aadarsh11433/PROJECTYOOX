@@ -3,31 +3,12 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
-#content{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    background-color: #333333;
-    color: white;
+#top{
     width: 100%;
-    position: fixed;
-    
-    
 }
-#content p{
-    font-size: 14px;
-
-}
-#content>p:hover{
-    color: gainsboro;
-}
-
-
-
-
 #top img{
     width: 100%;
-    height: 637;
+    
     
     
 }

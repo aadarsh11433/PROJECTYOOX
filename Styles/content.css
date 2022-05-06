@@ -3,17 +3,40 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
+#fixed{
+    display: block;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
 #content{
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     gap: 10px;
     background-color: #333333;
     color: white;
     width: 100%;
-    position: fixed;
+    
+   
     
     
 }
+
+.showcontent{
+    height: 500px;
+    background-color: khaki;
+    display: none;
+pointer-events: none;
+
+   
+}
+.hidecontent{
+    display: block;
+    pointer-events: visible;
+}
+
 #content p{
     font-size: 14px;
 
@@ -21,6 +44,8 @@ body{
 #content>p:hover{
     color: gainsboro;
 }
+
+
 #recentView{
     width: 100%;
     text-align: center;
