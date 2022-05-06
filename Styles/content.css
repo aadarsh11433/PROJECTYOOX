@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@700&family=PT+Sans&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+#content{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: #333333;
+    color: white;
+    width: 100%;
+    position: fixed;
+    
+    
+}
+#content p{
+    font-size: 14px;
+
+}
+#content>p:hover{
+    color: gainsboro;
+}
+#recentView{
+    width: 100%;
+    text-align: center;
+    background-color: #f3f3f3;
+    padding: 30px;
+}
+#recentProduct{
+    display:flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    
+}
+#recentView a{
+    color: #363638;
+    font-weight: 600;
+}
+#recentProduct>div{
+    background-color: white;
+    width: 27%;
+}
+#recentView h2{
+    font-size: 24px;
+
+}

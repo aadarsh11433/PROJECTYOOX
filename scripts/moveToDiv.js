@@ -72,19 +72,19 @@ function appendRecent(id){
         
         for(var x=recentViewed.length-1;x>=recentViewed.length-3;x--){
             
-            let name = recentViewed[x].name
-            let category=recentViewed[x].category
-            let img = recentViewed[x].img
-            let price = recentViewed[x].price
-            let off = recentViewed[x].off
-            let finalPrice = recentViewed[x].finalPrice
-            let color = recentViewed[x].color
-            let obj = {name,category,img,price,off,finalPrice,color}
+           
             
             
             if(recentViewed[x]!=undefined){
                 
-                
+                let name = recentViewed[x].name
+                let category=recentViewed[x].category
+                let img = recentViewed[x].img
+                let price = recentViewed[x].price
+                let off = recentViewed[x].off
+                let finalPrice = recentViewed[x].finalPrice
+                let color = recentViewed[x].color
+                let obj = {name,category,img,price,off,finalPrice,color}
                 let box = document.createElement("div")
                 let h3 = document.createElement("h3")
                 h3.innerText = name
@@ -116,7 +116,7 @@ function appendRecent(id){
 }
 function recentDetailedProduct(data){
         
-    window.location.href = "product_details.html"
+    window.location.href = "/product_details.html"
     localStorage.setItem("detailed_product",JSON.stringify(data))
 }
 
