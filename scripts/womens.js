@@ -100,9 +100,7 @@ let productarr = [
    import { moveTo } from "../scripts/moveToDiv.js";
    import {filteroptions } from "../scripts/filter.js"
 
-   f
-
-
+     
 function create (a)
 {
     return document.createElement(a);
