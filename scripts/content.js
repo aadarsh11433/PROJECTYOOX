@@ -2,35 +2,43 @@ function appendContent(x,y,z,i){
      
     let tar1 = document.getElementById(x)
     let tar2 = document.getElementById(y)
+    
+
+    
     for(var a=0;a<z;a++){
         let tar = `content_element${a}`
         let Clear = document.getElementById(tar)
-        let tarCon = i[a]
-        let clearTarcon = document.getElementById(tarCon)
-        if(clearTarcon.style.backgroundColor!="#333333"){
-            clearTarcon.style.backgroundColor = "#333333"
-            clearTarcon.style.color = "white"
-        }
+        
+        // let tarCon = i[a]
+        // let clearTarcon = document.getElementById(tarCon)
+        // if(clearTarcon.style.backgroundColor!="#333333"){
+        //     clearTarcon.style.backgroundColor = "#333333"
+        //     clearTarcon.style.color = "white"
+        // }
         
         if(Clear.innerHTML!=""){
+            
             
             Clear.style.display = "none"
             Clear.style.pointerEvents = "none"
         }
     }
     if(tar1.style.backgroundColor!="white"){
+        
         tar1.style.backgroundColor = "white"
         tar1.style.color = "#333333"
         tar2.style.display = "flex"
         tar2.style.pointerEvents = "visible"
     }
     else{
+        
         tar1.style.backgroundColor = "#333333"
         tar1.style.color = "white"
         tar2.style.display = "none"
         tar2.style.pointerEvents = "none"
+        
     }
-    
+
     tar2.classList.add = ".hidecontent"
     
     
