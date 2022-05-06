@@ -20,7 +20,7 @@ function navbar(){
  <div id="options2">
    <div class="div3">
    <h4><a href="womens.html">WOMEN</a></h4>
-   <h4><a href="mens.html">MEN</a></h4>
+   <h4><a href="men.html">MEN</a></h4>
    <h4><a href="kids.html">KIDS</a></h4>
    <h4>/</h4>
    <h4><a href="design.html">DESIGN+ART</a></h4>
