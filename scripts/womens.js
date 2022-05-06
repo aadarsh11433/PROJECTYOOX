@@ -98,11 +98,21 @@ let productarr = [
    ];
 
    import { moveTo } from "../scripts/moveToDiv.js";
-        
-   function create (a){
-       return document.createElement(a);
-   };
+   import {filteroptions } from "../scripts/filter.js"
 
+   f
+
+
+function create (a)
+{
+    return document.createElement(a);
+}
+   function read (a){
+       return (document.getElementById(a));
+   }
+
+   read("filters").innerHTML =filteroptions();
+   
    productarr.forEach(({img,hoverimg,name,category,price,finalPrice,off})=>{
 
      let mainbox =create("div");
@@ -146,3 +156,103 @@ let productarr = [
    document.getElementById("products").append(mainbox)
 
    })
+
+   
+   document.getElementById("categories_filter").addEventListener("click",()=>{
+    document.getElementById("li_in_category").style.display = "Block";
+    document.getElementById("li_in_designers").style.display = "none"
+    document.getElementById("li_in_size").style.display ="none"
+    document.getElementById("textinsize").style.display ="none";
+    document.getElementById("li_in_colors").style.display ="none";
+    read("li_in_material").style.display ="none";
+    read("li_in_price").style.display="none";
+    read("li_in_shopby_cat").style.display="none";
+   })
+   
+   document.getElementById("designers_filter").addEventListener("click",()=>{
+    document.getElementById("li_in_designers").style.display = "Block"
+    document.getElementById("li_in_category").style.display = "none"
+    document.getElementById("li_in_size").style.display ="none";
+    document.getElementById("textinsize").style.display ="none";
+    document.getElementById("li_in_colors").style.display ="none"
+    read("li_in_material").style.display ="none";
+    read("li_in_price").style.display="none";
+    read("li_in_shopby_cat").style.display="none";
+   })
+   
+   document.getElementById("price_filter").addEventListener("click",()=>{
+   
+    document.getElementById("li_in_price").style.display ="Block"
+   
+    document.getElementById("li_in_designers").style.display = "none"
+    document.getElementById("li_in_category").style.display = "none"
+    document.getElementById("li_in_size").style.display ="none"
+    document.getElementById("textinsize").style.display ="none";
+    document.getElementById("li_in_colors").style.display ="none";
+    read("li_in_material").style.display="none";
+    read("li_in_shopby_cat").style.display="none";
+   }) 
+   
+   
+   document.getElementById("color_filter").addEventListener("click",()=>{
+   
+    document.getElementById("li_in_colors").style.display ="Block"
+   
+    document.getElementById("li_in_designers").style.display = "none"
+    document.getElementById("li_in_category").style.display = "none"
+    document.getElementById("li_in_size").style.display ="none"
+    document.getElementById("textinsize").style.display ="none";
+     read("li_in_material").style.display ="none";
+    read("li_in_price").style.display="none";
+    read("li_in_shopby_cat").style.display="none";
+   })   
+   
+   
+   
+   read("material_filter").addEventListener("click",()=>{
+   
+   read("li_in_material").style.display = "Block"
+    read("li_in_designers").style.display = "none"
+    read("li_in_category").style.display = "none"
+    read("li_in_size").style.display ="none"
+    read("textinsize").style.display ="none";
+    read("li_in_price").style.display="none";
+    read("li_in_colors").style.display ="none"
+    read("li_in_shopby_cat").style.display="none";
+   })
+   
+   read("shopbycat").addEventListener("click",()=>{
+   
+    read("li_in_shopby_cat").style.display = "Block"
+        read("li_in_designers").style.display = "none"
+        read("li_in_category").style.display = "none"
+        read("li_in_price").style.display="none";
+        read("li_in_size").style.display ="none"
+        read("textinsize").style.display ="none";
+        read("li_in_colors").style.display ="none"
+        read("li_in_material").style.display ="none";
+    
+    })
+   //    function closecolorfilter(){
+   //     document.getElementById("li_in_colors").style.display ="None"
+   //     document.getElementById("color_filter").addEventListener("click",()=>{
+           
+   //     })
+   //    }
+   
+   
+   
+   document.getElementById("size_filter").addEventListener("click",()=>{
+    
+    read("textinsize").style.display ="block";
+    document.getElementById("li_in_size").style.display = "Grid"
+   
+    document.getElementById("li_in_category").style.display = "none"
+    read("li_in_designers").style.display="none";
+    read("li_in_price").style.display="none";
+    read("li_in_colors").style.display="none";
+    read("li_in_shopby_cat").style.display="none";
+    read("li_in_material").style.display = "none"
+   
+   
+   });
