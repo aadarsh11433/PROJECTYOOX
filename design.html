@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./Styles/subnav.css">
 
     <link rel="stylesheet" href="./Styles/footer.css">
-    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="./Styles/navbar.css">
     <title>YOOX | Design</title>
 </head>
 <body>
@@ -73,14 +73,20 @@
 
 <script type="module">
 
-    import  footer  from "./component/footer1.js"
-   
-    document.getElementById("footer").innerHTML= footer();
-   
-   
-    import { navbar, openForm, closeForm,checkLogin } from "./component/navbar.js"
- 
- document.getElementById("header").innerHTML= navbar();
+import {navbar ,openForm, closeForm,checkLogin ,closecc,opencc} from "../component/navbar1.js";
+document.getElementById("header").innerHTML=navbar();
+
+import footer from "../component/footer1.js"
+
+document.getElementById("open").addEventListener("click",openForm);
+
+document.querySelector("#login").addEventListener("click",checkLogin);
+document.getElementById("close").addEventListener("click",closeForm);
+document.getElementById("ccclose").addEventListener("click",closecc);
+document.getElementById("custc").addEventListener("click",opencc);
+
+document.getElementById("footer").innerHTML=footer();
+
    
    //  import navbar from "./component/navbar1.js"
    
