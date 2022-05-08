@@ -26,7 +26,9 @@ else{
 let cartBag = JSON.parse(localStorage.getItem("addToCart"))||[]
 let addToBag = document.createElement("button")
 addToBag.addEventListener("click",()=>{
-    localStorage.setItem("addToCart",JSON.stringify(details))
+
+    cartBag.push(details)
+    localStorage.setItem("addToCart",JSON.stringify(cartBag))
 })
 addToBag.innerText = "ADD TO SHOPPING BAG"
 let addToDream = document.createElement("button")

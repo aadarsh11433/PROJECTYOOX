@@ -97,9 +97,76 @@ let productarr = [
     },
    ];
 
-   import { moveTo } from "../scripts/moveToDiv.js";
-   import {filteroptions } from "../scripts/filter.js"
 
+
+   let newarrivalsarr = [
+    {
+        img:"https://www.yoox.com/images/items/17/17216515mo_14_f.jpg?width=210&height=272&impolicy=crop&gravity=Center",
+        name:"BOTTEGA VENETA",category:"Mules and clogs",
+        price:1088,
+        off:"20% OFF",
+        finalPrice:870,
+        hoverimg:"https://www.yoox.com/images/items/17/17216515MO_14_e.jpg?impolicy=crop&width=387&height=490"    
+    },
+    {
+        img:"https://www.yoox.com/images/items/15/15191180ql_14_f.jpg?width=210&height=272&impolicy=crop&gravity=Center",
+        name:"8 BY YOOX",category:"Long dresses",
+        price:280,
+        off:"50% OFF",
+        finalPrice:140,
+        hoverimg:"https://www.yoox.com/images/items/15/15191180QL_14_r.jpg?impolicy=crop&width=387&height=490"    
+    },
+    {
+        img:"https://www.yoox.com/images/items/45/45657554kr_14_f.jpg?width=210&height=272&impolicy=crop&gravity=Center",
+        name:"8 BY YOOX",category:"Cross-body-bags",
+        price:500,
+        off:"50% OFF",
+        finalPrice:250,
+        hoverimg:"https://www.yoox.com/images/items/45/45657554KR_14_d.jpg?impolicy=crop&width=387&height=490"    
+    }, 
+    {
+        img:"https://www.yoox.com/images/items/15/15196108mo_14_f.jpg?width=210&height=272&impolicy=crop&gravity=Center",
+        name:"MARNI",category:"Midi dress",
+        price:1216,
+        off:"54% OFF",
+        finalPrice:548,
+        hoverimg:"https://www.yoox.com/images/items/15/15196108MO_14_e.jpg?impolicy=crop&width=387&height=490"    
+    } 
+
+];
+
+
+
+
+
+import {contentList} from "./content.js"
+var menContentList = ["NEW ARRIVALS","DESIGNERS","CLOTHING","SHOES","ACCESSORIES","8 BY YOOX","YOOXYGEN","COLLABORATIONS","BEST OFFERS"]
+var menContentIDList = ["newarrivals","designersdiv","clothing","shoes","Accessories_bags","byyoox","yooxygen","collab","bestdeals"]
+import {WnFunctions} from "./wnfun.js"
+
+// for contentList(id of black strip,array of innerText of LI,array of idname for li,array of functions of innerdiv,number of elements in array)
+// contentList("content",menContentList,menContentIDList,WnFunctions,9)
+
+
+
+
+
+
+
+
+
+
+
+
+
+    import { appendRecent } from "../scripts/moveToDiv.js";
+    
+   import { moveTo } from "../scripts/moveToDiv.js";
+   import {filteroptions } from "../scripts/filter.js";
+//    import {navbar} from "../component/navbar1.js"
+    // import {footer} from  "../component/footer1.js"
+//    document.getElementById("navbar").innerHTML = navbar()
+//    document.getElementById("footer").innerHTML = footer()
      
 function create (a)
 {
@@ -109,8 +176,13 @@ function create (a)
        return (document.getElementById(a));
    }
 
-   read("filters").innerHTML =filteroptions();
-   
+//    read("filters").innerHTML =filteroptions();
+   appendRecent("recentproducts")
+  
+  appendata(productarr,read("products"))
+  appendata(newarrivalsarr,read("products_in_newarrivals"))
+  
+  function appendata(productarr,container) {
    productarr.forEach(({img,hoverimg,name,category,price,finalPrice,off})=>{
 
      let mainbox =create("div");
@@ -151,11 +223,14 @@ function create (a)
     })
 
    mainbox.append(imgdiv,itemname,catname,pricenoff,pricediv);
-   document.getElementById("products").append(mainbox)
+   container.append(mainbox)
 
    })
 
-   
+   }
+
+
+
    document.getElementById("categories_filter").addEventListener("click",()=>{
     document.getElementById("li_in_category").style.display = "Block";
     document.getElementById("li_in_designers").style.display = "none"
@@ -254,3 +329,4 @@ function create (a)
    
    
    });
+
