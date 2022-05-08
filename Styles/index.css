@@ -1,12 +1,17 @@
+@import"footer.css";
+@import "navbar.css";
+@import "style.css";
 #navbar{
    
+
     background-color: white;
    margin: 0px -10px 0px -8px;
+
    height: 108px;
    /* width: 100%; */
 }
 body{
-   background-color: #E6E6FA;
+   background-color: #f3f3f3;
 }
 
  #navbar #options{
