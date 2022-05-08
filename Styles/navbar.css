@@ -1,0 +1,294 @@
+@import"footer.css";
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+
+#navbar{
+   
+    background-color: white;
+    height: 108px;
+    width: 100%;
+ }
+ #options{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    height: 50px;
+   margin: auto;
+ 
+    margin-top: -10px;
+   justify-content: space-between;
+    border: 1px solid #DCDCDC;
+   
+ }
+ #options2{
+    display: flex;
+    gap: 20px;
+    width: 80%;
+   height: 70px;
+    margin-left: 150px;
+    justify-content: space-between;
+ }
+ .div1{
+    display: flex;
+    text-decoration: underline;
+    margin-left: 140px;
+   
+   
+ 
+ }
+ #selecticon{
+    margin-top: 11px;
+    margin-left: 1px;
+    
+ }
+ .div1>h4{
+    margin-left: 20px;
+    font-size: 11.4px;
+    font-family: Montserrat, sans-serif;
+ 
+    
+ }
+ .div2{
+    display: flex;
+    text-decoration: underline;
+    margin-right: 110px;
+    
+ }
+ .div2>h4{
+    margin-left: 20px;
+    font-family: Montserrat, sans-serif;
+    font-size: 11.4px;
+ }
+ #pen{
+    margin-right: 3px;
+ }
+ #lock{
+    margin-right: 3px;
+ }
+ .div3{
+    display: flex;
+    
+    
+    
+ }
+ .div3>h4{
+    margin-left: 20px;
+    font-family: Montserrat, sans-serif;
+    font-size: 13px;
+    
+ }
+ 
+ #searchicon{
+   margin-right: 62px;
+   margin-top: 18px;
+   font-size: 25px;
+ 
+   
+ }
+ #searchicon{
+    margin-right: 62px;
+    margin-top: 18px;
+    font-size: 25px;
+  
+    
+  }
+  #hearticon{
+     margin-right: 60px;
+     font-size: 25px;
+     margin-top: 18px;
+  }
+  #logo{
+    font-size: 34px;
+    font-weight: bold;
+    margin-top: 6px;
+    font-family: Montserrat, sans-serif;
+    
+ }
+ 
+ a{
+    text-decoration: none;
+    color: #333333;
+    
+ }
+ .anchor{
+    color: #FFFFFF;
+ }
+ 
+ 
+ .hover1{
+    -webkit-transition: color 0s;
+    transition: color 0s;
+ }
+ .hover1:hover {
+    background-color: #DCDCDC;
+ }
+ 
+ 
+ 
+ #logoo{
+    height: 38px;
+    width: 116px;
+    margin-top: 2px;
+    margin-left: -100px;
+ 
+ }
+ 
+ 
+ /* Login */
+ body{
+    font-family:Montserrat, sans-serif;
+ }
+ .form-popup {
+    display: none;
+    /* position: relative; */
+    /* margin-left: 800px; */
+    bottom: 0;
+    right: 100px;
+    z-index: 9;
+ }
+ 
+ /* Add styles to the form container */
+ .form-container {
+    max-width: 300px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid;
+ 
+ }
+ 
+ /* Full-width input fields */
+ .form-container input[type=text],
+ .form-container input[type=password] {
+    width: 85%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+ }
+ 
+ #open {
+    border: none;
+    background-color: white;
+    text-decoration: underline;
+    cursor: pointer;
+ }
+ 
+ .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+ }
+ 
+ .fa-facebook {
+    background: #3B5998;
+    color: white;
+ }
+ 
+ #gog{
+    padding: 20px;
+    width: 100px;
+    text-align: center;
+    border: 0.5px solid grey;
+    background-color: white;
+    cursor: pointer;
+ }
+ #close{
+    margin-left: 90%;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+ }
+ #login{
+    width: 80%;
+    background-color: rgb(36, 36, 36);
+    color: white;
+    border: none;
+    padding: 10px;
+ }
+ 
+ 
+ #main{
+    width: 100%;
+    display: flex;
+    /* border: 1px solid red; */
+    height: 1px;
+    position: absolute;
+    justify-content: space-between;
+ }
+ #custo-box{
+    background-color: white;
+    width: 60%;
+    /* position: fixed; */
+ }
+ .form-popup{
+    width: 30%;
+    position: fixed;
+ }
+
+ #custc{
+    text-decoration: underline;
+    border: none;
+    background-color: white;
+ }
+ /* custermer care */
+ #custo-box{
+   height: 500px;
+   width: 350px;
+   border: 1px solid black;
+   text-align: center;
+   /* position: absolute; */
+}
+#custo-top-name{
+   font-size: 17px;
+   font-family: sans-serif;
+}
+#custo-top-name2{
+   width: 80%;
+   height: 30px;
+   color: white;
+   background-color: #333333;
+   font-size: 13px;
+   font-family: sans-serif;
+   text-align: center;
+   margin: auto;
+   padding-top: 15px;
+   margin-top: 15px;
+}
+.custo-top-name3{
+   width: 80%;
+   height: 30px;
+   font-size: 15px;
+   text-align: center;
+   font-family: sans-serif;
+   border-bottom: rgb(211, 209, 209) dotted;
+   margin: auto;
+   margin-top: 15px;
+}
+#custo-cont-box{
+   line-height: 5px;
+   margin-top: 40px;
+}
+#custo-email-box{
+   width: 80%;
+   height: 100px;
+   line-height: 0px;
+   margin: auto;
+   /* border: 1px solid black; */
+   margin-top: 20px;
+   background-color: #f3f3f3;
+   padding-top: 20px;
+}
+.custo-cont-p{
+   font-family: sans-serif;
+   font-size: 13px;
+}
+#custo-cont-name{
+   font-size: 20px;
+   font-family: sans-serif;
+}
+#ccclose{
+   font-size: 20px;
+   margin-left: 310px;
+}
