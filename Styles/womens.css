@@ -1,4 +1,57 @@
 
+
+#content{
+    display: inline-flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: #333333;
+    color: white;
+    width: 100%;
+    
+   
+    
+    
+}
+
+.showcontent{
+    height: 500px;
+    background-color: khaki;
+    display: none;
+pointer-events: none;
+
+   
+}
+.hidecontent{
+    display: block;
+    pointer-events: visible;
+}
+
+#content p{
+    font-size: 14px;
+
+}
+#content>p:hover{
+    color: gainsboro;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #mainimage{
     width: 74%;
     margin: auto;
@@ -12,6 +65,9 @@
     height: 100%;
 }
 
+/* #content{
+    text-transform: uppercase;
+} */
 #products_filters{
 display: flex;
 justify-content: center;
@@ -22,8 +78,7 @@ margin: auto;
 }
 #filters{
     width: 30%;
-    height: 400px;
-    border: 1px solid black;
+
 }
 #products{
 display: grid;
@@ -58,3 +113,263 @@ padding-bottom: 10px;
         width: 60%;
         margin: auto;
 }    
+ #bestdeals,#yooxygen,#collab,#byyoox,#Accessories_bags,
+ #shoes,#clothing,#designersdiv,#newarrivals
+ {
+     display: flex;
+ }
+ #newarrivals{
+     margin: -10px;
+     margin-top: 60px;
+     background-color:white;
+     border: 1px solid;
+     justify-content: center;
+     /* background-color: white; */
+ }
+ #products_in_newarrivals{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-right: 10%;
+    flex:80%;
+    padding: 15px;
+ }
+ #newarrivals > #options{
+     margin-left: 10%;
+     flex: 15%;
+     background-color: #f3f3f3;
+     padding: 5px;
+ }
+ #newarrivals #options >div{
+    padding: 6px;
+    font-size: 12px;
+}
+ #products_in_newarrivals>div{
+    display: flex;
+    flex-direction: column;
+    width: 24%;
+    height: 350px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding-bottom: 10px;
+    text-align: center;
+ }
+ #products_in_newarrivals >div >div:first-child{
+    height: 70%;
+   border-bottom: 1px solid gray;
+}
+ #products_in_newarrivals img{
+    height: 100%;
+    width: 100%;
+ }
+ #products_in_newarrivals>div >div:nth-child(4){
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+ }
+ #designersdiv{
+  background-color: rgb(251, 252, 252);
+ margin: -10px;
+margin-top: 60px;
+gap: 10px;
+border: 1px solid;
+ }
+ 
+ #designersdiv > #options{
+     display: flex;
+    /* border: 1px solid; */
+     margin-left: 15%;
+     flex:18%;
+     background-color: #f3f3f3 ;
+ }
+ #designersdiv >#options >div >div{
+     padding: 6px;
+     font-size: 12px;
+ }
+ .two  {
+     margin-top: 27px;
+     width: 45%;
+     /* border:  1px solid; */
+ }
+ /* .one{
+     border:  1px solid; 
+  }  */
+ .one div:nth-child(15) , .two div:last-child {
+     border-bottom: 1px solid gray;
+
+ }
+ #designersdiv .images{
+     display: flex;
+     padding: 10px;
+     gap: 10px;
+     text-align: center;
+     flex: 40%;
+     font-size: 11px;
+ }
+ .images p {
+     margin: 2px;
+ }
+
+ #clothing{
+     background-color: white;
+ margin: -10px;
+margin-top: 60px;
+gap: 10px;
+border: 1px solid;
+ }
+
+ .category_in_clothing{
+     background-color: #f3f3f3;
+     margin-left:13%;
+ }
+ #clothing  > div >div{
+padding: 6px; 
+font-size: 12px;
+ }
+ .img_in_clothing{
+     padding: 10px;
+     text-align: center;
+ }
+ .img_in_clothing p {
+    margin: 2px;
+    font-size: 12px;
+}
+#shoes{
+    gap: 10px;
+    margin-top: 20px;
+}
+#shoes >div >div {
+  padding: 6px;
+  font-size: 12px;
+}
+.category_in_shoes{
+    margin-left: 12.5%;
+    background-color: #f3f3f3;
+}
+.category_in_shoes,.designers_in_shoes,.inspiration_in_shoes{
+
+    width: 16%;
+}
+.img_in_shoes{
+    padding: 10px;
+    width:25%;
+}
+.img_in_shoes p{
+    margin: 2px;
+    text-align: center;
+    font-size: 12px;
+}
+#Accessories_bags{
+border: 1px solid;
+gap: 10px;
+}
+.category_in_acc_bags{
+    background-color: #f3f3f3;
+    margin-left: 13%;
+}
+#Accessories_bags>div >div ,
+ #byyoox>div >div,
+ #yooxygen>div >div ,
+ #collab > div >div ,
+ #bestdeals > div >div{
+    padding: 6px;
+    font-size: 12px;
+  }
+  .category_in_acc_bags,
+  .designers_in_acc_bags,
+  .inspiration_in_acc_bags
+  {
+      width: 16%;
+  }
+.img_in_acc_bags{
+    padding: 10px;
+    width: 25%;
+}
+.img_in_acc_bags p{ 
+    margin: 2px;
+    text-align: center;
+    font-size: 12px;
+}
+#byyoox{
+    gap:30px;
+    border: 1px solid;
+}
+.category_in_byyoox{
+    background-color: #f3f3f3;
+    margin-left: 13%;
+    width: 16%;
+}
+.img1_in_byyoox,
+.img2_in_byyoox{
+    margin: 2px;
+    text-align: center;
+    font-size: 12px;
+
+}
+#yooxygen{
+    gap:20px;
+    border:  1px solid;
+}
+#content_in_yooxygen{
+    background-color: #f3f3f3;
+    margin-left: 13%;
+    width: 17%;   
+    padding: 10px;
+}
+.img1_in_yooxygen p,
+.img2_in_yooxygen p{
+
+    margin: 2px;
+    text-align: center;
+    font-size: 12px;
+}
+.img1_in_yooxygen,
+.img2_in_yooxygen {
+    padding:  10px;
+}
+.img2_in_yooxygen{
+    width: 15%;
+}
+#collab {
+    gap :20px;
+}
+#bestdeals{
+    gap :15px;
+}
+#content_in_collab, #content_in_bestdeals{
+    width: 20%;
+    padding: 10px;
+    background-color: hsl(0, 0%, 95%);
+    margin-left: 13%;
+   
+}
+#content_in_collab >div:first-child
+{
+    margin-top: 20px;
+}
+.img1_in_collab,.img2_in_collab,
+.img1_in_bestdeals  ,
+.img2_in_bestdeals{
+    padding: 15px;
+    
+}
+.img1_in_collab  p,.img2_in_collab  p,
+.img1_in_bestdeals p ,
+.img2_in_bestdeals p
+{
+    margin: 2px;
+    text-align: center;
+    font-size: 12px;
+}
+.img2_in_bestdeals{
+    width:25%
+}
+#recentproducts{
+text-align: center;
+}
+#recentproducts > div  >div{
+box-shadow: rgba(0.5, 0.15, 0.15, 0.15) 1.95px 1.95px 2.6px;
+}
+#recentproducts img {
+    height: 245px;
+}
