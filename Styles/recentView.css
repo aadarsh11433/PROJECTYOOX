@@ -6,16 +6,7 @@ body{
 #today{
     display: grid;
     grid-template-columns: repeat(6,1fr);
-   border: 1px solid;
+
     justify-content: center;
     
-}
-#previous{
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    border: 1px solid;
-    justify-content: center;
-}
-#previous img{
-    height: 350px;
 }

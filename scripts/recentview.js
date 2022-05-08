@@ -1,3 +1,11 @@
+import { navbar, openForm, closeForm, checkLogin, opencc, closecc } from "../component/navbar1.js"
+document.getElementById("navbar").innerHTML = navbar()
+document.getElementById("open").addEventListener("click",openForm);
+
+document.querySelector("#login").addEventListener("click",checkLogin);
+document.getElementById("close").addEventListener("click",closeForm);
+document.getElementById("ccclose").addEventListener("click",closecc);
+document.getElementById("custc").addEventListener("click",opencc);
 let data = JSON.parse(localStorage.getItem("recentView"))||[]
 import { recentDetailedProduct } from "./moveToDiv.js"
 let today = new Date()
@@ -23,7 +31,7 @@ data.forEach(({name,category,img,price,off,finalPrice,date,month})=>{
         document.getElementById("today").append(box)
     }
     else {
-        // previousName.innerText = "PREVIOUSLY VIEWED"
+        previousName.innerText = "PREVIOUSLY VIEWED"
         let box = document.createElement("div")
         let image = document.createElement("img")
         image.src = img

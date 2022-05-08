@@ -4,19 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Styles/product_details.css">
-    <link rel="stylesheet" href="Styles/index.css">
-
+    <link rel="stylesheet" href="./Styles/navbar.css">
+    <link rel="stylesheet" href="./Styles/product_details.css">
+    <link rel="stylesheet" href="./Styles/footer.css">
     <script src="https://kit.fontawesome.com/1a03f27c53.js" crossorigin="anonymous"></script>
+    
     <title>Document</title>
 </head>
 <body>
-
-<div id="navbar"></div>
-
+    <div id="fixed">
+        <div id="navbar"></div>
+        <div id="content"></div>
+        
+        
+    </div>
     <div id="detailed_product">
         <div id="top">
-            <div id="topleft"></div>
+            <div id="topleft">
+                <div id="topleftImg"></div>
+            </div>
             <div id="topright">
                 <h2 id="name"></h2>
                 <p id="category"></p>
@@ -29,12 +35,12 @@
                 <input type="radio" name="color" id="color_radio" checked><br>
             </div>
         </div>
-        
+        <div id="footer"></div> 
     </div>
     <div id="second">
     <div id="secondLeft" class="details">
     
-       
+        
        
 
     </div>
@@ -42,6 +48,7 @@
 
     </div>
     </div>
+    <div class="line"></div>
     <div id="third">
      <div id="thirdLeft" class="details">
         <h4 class="iconH"><i class="fa-solid fa-truck"></i>Shipping</h4>
@@ -59,12 +66,9 @@
      </div>
 
     </div>
-    <div id="recentView"></div>
-
-
-    <div id="footer"></div>
+    <div class="line"></div>
+    <div id="recentView"></div><br>
+    <footer id="footer"></footer>
 </body>
 </html>
-<script src="scripts/product_details.js" type="module"></script>
-
-<script src="./scripts/index.js" type="module">
+<script src="./scripts/product_details.js" type="module"></script>

@@ -1,51 +1,51 @@
 function appendContent(x,y,z,i){
-     
+     let recentData = {x,y}
     let tar1 = document.getElementById(x)
     let tar2 = document.getElementById(y)
+    for(let a = 0;a<z;a++){
+        
+        // let tar = i[a]
+        // tar.display.backgroundColor = "#333333"
+        // tar.display.color = "white"
+        document.getElementById(`content_element${a}`).style.display = "none"
+        document.getElementById(i[a]).style.backgroundColor = "#333333"
+        document.getElementById(i[a]).style.color = "white"
+        
+        document.getElementById(`content_element${a}`).style.pointerEvents = "none"
+  
+    }
+ 
+  let recentClick = JSON.parse(localStorage.getItem("recent_click"))
+  if(recentClick.x==x){
+      tar1.style.backgroundColor="#333333"
+      tar1.style.color="white"
+      tar2.style.display = "none"
+      tar2.style.pointerEvents = "none"
+      localStorage.setItem("recent_click",JSON.stringify("changed"))
     
+  }
+  else{
+      tar1.style.backgroundColor = "white"
+      tar1.style.color = "black"
+      tar2.style.display = "block"
+      tar2.style.pointerEvents = "visible"
+      localStorage.setItem("recent_click",JSON.stringify(recentData))
+  }
+ 
+  
 
     
-    for(var a=0;a<z;a++){
-        let tar = `content_element${a}`
-        let Clear = document.getElementById(tar)
-        
-        // let tarCon = i[a]
-        // let clearTarcon = document.getElementById(tarCon)
-        // if(clearTarcon.style.backgroundColor!="#333333"){
-        //     clearTarcon.style.backgroundColor = "#333333"
-        //     clearTarcon.style.color = "white"
-        // }
-        
-        if(Clear.innerHTML!=""){
-            
-            
-            Clear.style.display = "none"
-            Clear.style.pointerEvents = "none"
-        }
-    }
-    if(tar1.style.backgroundColor!="white"){
-        
-        tar1.style.backgroundColor = "white"
-        tar1.style.color = "#333333"
-        tar2.style.display = "flex"
-        tar2.style.pointerEvents = "visible"
-    }
-    else{
-        
-        tar1.style.backgroundColor = "#333333"
-        tar1.style.color = "white"
-        tar2.style.display = "none"
-        tar2.style.pointerEvents = "none"
-        
-    }
-
-    tar2.classList.add = ".hidecontent"
     
     
  
 }
 
 function contentList(id,list,listID,func,z){
+    let Link = document.createElement("script")
+    Link.src ="https://kit.fontawesome.com/24c494a6b6.js"
+    Link.crossOrigin = "anonymous"
+    document.querySelector("head").append(Link)
+    
     let UL = document.createElement("ul")
     UL.style.listStyle = "none"
     UL.style.display = "inline-flex"
@@ -63,6 +63,7 @@ function contentList(id,list,listID,func,z){
         li.style.padding = "10px"
         li.id = listID[x]
         let content = document.createElement("div")
+        content.style.backgroundColor = "white"
         content.id = `content_element${x}`
         content.className = "showcontent"
         content.innerHTML = Div
