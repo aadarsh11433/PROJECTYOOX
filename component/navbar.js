@@ -53,7 +53,7 @@ function navbar() {
         <a href="">WOMEN</a>
         <a href="">MEN</a>
             <a href="">KIDS /</a>
-            <a href="">DESIGN+ART</a>
+            <a href="designart.html">DESIGN+ART</a>
             </div>
            <div id="d2">
             <a href="index.html"><img src="https://pbs.twimg.com/profile_images/1500895073965416449/ynLa9JCR_400x400.jpg" alt="logo" style="width: 100p%;height: 100%;">

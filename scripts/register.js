@@ -3,6 +3,7 @@ import {navbar ,openForm, closeForm,checkLogin ,closecc,opencc} from "../compone
 
 document.getElementById("navbar").innerHTML= navbar();
 
+closecc();
 
 
     let but1 = document.getElementById("google");
@@ -75,7 +76,7 @@ document.getElementById("navbar").innerHTML= navbar();
                 users.push(userData);
                 localStorage.setItem('UserDetails', JSON.stringify(users));
                 alert("Register Sucessfully...");
-                window.location.reload();
+                window.location.href="index.html";
             }else{
                 document.getElementById("error").innerText="Email already existed......";
             }

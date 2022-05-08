@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Montserrat   
+
+font-family: 'Bebas Neue', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/* Playfair Display
+
+font-family: 'Bebas Neue', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+*/
+
+
+
+.maindance{
+    width: 70%;
+    height: 450px;
+    /* border: 1px solid black ; */
+    margin: auto;
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#dancingdays{
+    width: 608px;
+    height: 416px;
+    /* border: 1px solid rgb(22, 230, 22); */
+    background: url("https://www.yoox.com/images/yoox80/banners/6769_2_Living_TOP1.jpg?634485886601286852#width=897&height=615");
+    display: flex;
+    align-items: end;
+    cursor: pointer;
+
+
+}
+#simpledesign{
+    height: 416px;
+    width: 288px;
+    /* border: 1px solid red; */
+    text-align: center;
+    cursor: pointer;
+}
+#simpledesign img{
+    height: 300px;
+    width: 288px;
+}
+#dancesub{
+    width: 390px;
+    height: 114px;
+    background-color: white;
+    padding: 28px;
+    box-sizing: border-box;
+    margin-left: 10px;
+    
+    
+    
+}
+.maindance h2,.uniqimg{
+    padding: 0%;
+    margin: 0%;
+    margin-bottom: 12px;
+    font-family: 'Bebas Neue', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+color: rgb(51, 51, 51)
+;
+cursor: pointer; 
+}
+.maindance p,.uniqimg{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Bebas Neue', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+letter-spacing: 1px;
+font-size: 15px;
+line-height: 19px;
+
+font-weight: 300;
+color: rgb(51, 51, 51)
+;
+}
+#setdance{
+    padding: 25px 8px;
+    box-sizing: border-box;
+}
+
+#threetraits{
+    width: 928px;
+    height: 221px;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-top: 40px;
+}
+
+#threetraits h1 {
+    font-size: 48px;
+    font-family: 'Bebas Neue', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-weight: 700px;
+/* line-height: 35px; */
+width: 80%;
+text-align: center;
+margin: auto;
+color: rgb(51, 51, 51)
+;
+
+}
+#threetraits hr{
+    width: 40px;
+    height: 2px;
+    background-color: #cbbb97;
+    border: none;
+    margin-top: 25px;
+}
+#threetraits p{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-size: 17px;
+line-height: 19px;
+font-weight: 700;
+color: #cbbb97;
+letter-spacing: 2px;
+}
+
+
+
+#uniqtouch{
+    width: 608px;
+    height: 520px;
+    /* border: 1px solid black; */
+    margin: auto;
+    text-align: center;
+    font-weight: 300;
+}
+#uniqtouch img{
+    width: 608px;
+    height: 416px;
+}
+.bigboxvibrant{
+    height: 1000px;
+    /* border: 1px solid black; */
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#vibrantsub{
+    width: 368px;
+    height: 980px;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    /* align-content: space-between; */
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subdivvi{
+    width: 368px;
+    height: 470px;
+    /* border: 1px solid rgb(0, 0, 0); */
+    text-align: center;
+    font-weight: 300;
+    cursor: pointer;
+    
+}
+.subdivvi img{
+    height: 368px;
+    width: 368px;
+}
+
+
+
+#haveseat{
+    height: 700px;
+    width: 448px;
+    /* border: 1px solid green; */
+    text-align: center;
+}
+#haveseat img {
+    height: 573px;
+    width: 448px;
+}
+
+.carosel{
+    height: 350px;
+    width: 63%;
+    /* border: 1px solid black; */
+    margin: auto;
+    font-family: 'Bebas Neue', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+
+.carhead h3{
+    margin: 0;
+    text-align: center;
+    font-size: 17px;
+    color: #333333;
+    font-weight: 700;
+
+}
+
+#caroseldivs{
+    height: 265px;
+    width: 90%;
+    /* border: 1px solid red; */
+    margin-top: 40px;
+    margin: auto;
+    display: flex;
+    overflow: scroll;
+ scroll-behavior: smooth;
+ 
+  
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#caroseldivs::-webkit-scrollbar{
+    display: none;
+}
+
+
+#caroseldivs div{
+    text-align: center;
+    cursor: pointer;
+}
+
+#caroseldivs img{
+    height: 159px;
+    width: 125px;
+}
+#caroseldivs h3{
+    font-size: 13px;
+    font-weight: 700;
+    color: #333333;
+    margin: 0;
+    margin-bottom: 7px;
+}
+#caroseldivs p{
+    font-size: 12px;
+    font-weight: 300;
+    color: #333333;
+    margin: 0;
+    margin-bottom: 7px;
+}
+#caroseldivs span{
+    font-size: 11px;
+    font-weight: 700;
+    color: #333333;
+    margin: 0;
+}
+
+#scrlleft,#scrlright{
+    background: white;
+    border: none;
+    font-size: 25px;
+    color: #8b8181;
+}
+
+
+
+
+#endimg{
+    width: 70%;
+    height: 220px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    background: url("https://www.yoox.com/images/yoox80/banners/6769_1_DesignArt_BOTTOM.jpg?634485886601286852#width=1348&height=320");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Bebas Neue', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+display: flex;
+align-items: center;
+justify-content: center;
+color: aliceblue;
+text-align: center;
+}
+
+#endtext>h2{
+    margin-bottom: 0%;
+    
+}
+#endimg div p{
+    margin-top: 0%;
+     
+ }
+ #endimg div h4{
+    text-decoration: underline;
+     
+ }
+ .slid{
+     display: flex;
+ }

@@ -3,6 +3,7 @@ document.getElementById("navbar").innerHTML=navbar();
 
 import footer from "../component/footer1.js"
 
+closecc();
 document.getElementById("open").addEventListener("click",openForm);
 
 document.querySelector("#login").addEventListener("click",checkLogin);
