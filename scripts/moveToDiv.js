@@ -1,8 +1,10 @@
-function moveToDiv(a,b){
-
+function moveToDiv(a,b,c){
+if(c==undefined){
     a.forEach(({img,name,price,finalPrice,off,category,color})=>{
+        
     
         let div = document.createElement("div")
+        div.style.textAlign = "center"
         
         let image = document.createElement("img")
         image.src = img
@@ -21,12 +23,73 @@ function moveToDiv(a,b){
         if(price!=undefined && off!=undefined){
             
             Price.innerText = `US$${price},00`
+            Price.style.padding = "5px"
             Off.innerText = `${off}% OFF`
+            Off.style.padding = "5px"
+            Off.style.fontWeight = "bold"
         }
         Price.style.textDecoration = "line-through"
         p.append(Price,Off)
+        p.style.display = "inline-flex"
+        
         let FPrice = document.createElement("p")
         FPrice.innerText = `US$${finalPrice},00`
+        FPrice.style.fontWeight = "bolder"
+        let today = new Date()
+        let date = today.getDate()
+        let month = today.getMonth()+1
+        let Data = {
+            img,name,price,finalPrice,off,category,date,month,color
+        }
+        
+        div.onclick = ()=>{
+            
+            moveTo(Data)
+        }
+        div.style.backgroundColor ="white"
+        div.append(image,Pname,p_category,p,FPrice)
+        document.getElementById(b).append(div)
+        
+    })
+}
+else{
+    let value = 1
+    console.log(a)
+    a.forEach(({img,name,price,finalPrice,off,category,color})=>{
+        if(value<=c){
+            let div = document.createElement("div")
+            div.style.textAlign = "center"
+        
+        let image = document.createElement("img")
+        image.src = img
+        let Pname = document.createElement("h4")
+        
+        Pname.innerText = name
+        let p_category = document.createElement("p")
+        p_category.innerText = category
+        let p = document.createElement("div")
+        let Price = document.createElement("p")
+        
+        
+        let Off = document.createElement("p")
+        
+        
+        if(price!=undefined && off!=undefined){
+            
+            Price.innerText = `US$${price},00`
+            Price.style.padding = "5px"
+            Off.innerText = `${off}% OFF`
+            Off.style.fontWeight = "bold"
+        
+            Off.style.padding = "5px"
+        }
+        Price.style.textDecoration = "line-through"
+        p.append(Price,Off)
+        p.style.display = "inline-flex"
+        
+        let FPrice = document.createElement("p")
+        FPrice.innerText = `US$${finalPrice},00`
+        FPrice.style.fontWeight = "bolder"
         let today = new Date()
         let date = today.getDate()
         let month = today.getMonth()+1
@@ -37,14 +100,21 @@ function moveToDiv(a,b){
         div.onclick = ()=>{
             moveTo(Data)
         }
+        div.style.backgroundColor ="white"
         div.append(image,Pname,p_category,p,FPrice)
         document.getElementById(b).append(div)
+        value++
+        }
+    
         
     })
 }
+
+ 
+}
 function moveTo(data){
     recentView(data)
-    window.location.href = "product_details.html"
+    window.location.href = "/product_details.html"
     localStorage.setItem("detailed_product",JSON.stringify(data))
 }
 function recentView(data){
@@ -120,4 +190,4 @@ function recentDetailedProduct(data){
     localStorage.setItem("detailed_product",JSON.stringify(data))
 }
 
-export {moveToDiv,appendRecent,recentDetailedProduct,moveTo}
+export {moveToDiv,appendRecent,recentDetailedProduct}

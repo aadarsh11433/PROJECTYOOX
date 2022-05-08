@@ -3,14 +3,21 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
+.line{
+    width: 100%;
+    border-top: 2px solid black;
+}
+
 #top{
     display: flex;
 }
 #topleft{
     width: 50%;
+    padding: 30px;
 }
 #topright{
-    width: 50%;
+    width: 30%;
+    margin-left: 10%;
 }
 
 #recentView{

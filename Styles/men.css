@@ -5,6 +5,7 @@ body{
 }
 #top{
     width: 100%;
+    padding-top: 30px;
 }
 #top img{
     width: 100%;
@@ -12,6 +13,7 @@ body{
     
     
 }
+
 #top >div{
 background-color: white;
 position: absolute;
@@ -118,3 +120,4 @@ font-weight: bold;
     font-size: 24px;
 
 }
+

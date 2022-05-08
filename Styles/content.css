@@ -11,6 +11,14 @@ body{
     left: 0;
     z-index: 100;
 }
+h2{
+    text-align: center;
+    font-weight: 500;
+}
+a{
+    color: black;
+}
+
 #content{
     display: inline-flex;
     justify-content: center;
@@ -71,3 +79,34 @@ pointer-events: none;
     font-size: 24px;
 
 }
+.leftDiv{
+    width: 180px;
+    background-color: #f3f3f3;
+    cursor: pointer;
+    padding: 10px;
+    }
+    .leftdiv a{
+        padding: 10px;
+    }
+    .rightDiv{
+        display: flex;
+        width: 60%;
+    }
+    .mainDiv{
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        margin: auto;
+        text-transform: uppercase;
+        text-align: center;
+        color: black;
+        
+    }
+    .mainDiv h4{
+        padding: 0;
+        background-color: none;
+    
+    }
+    .mainDiv a{color: black;
+
+    }
