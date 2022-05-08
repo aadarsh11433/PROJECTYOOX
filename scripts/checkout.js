@@ -1,7 +1,11 @@
-import {navbar} from "../component/navbar1.js"
+import { navbar, openForm, closeForm,checkLogin,closecc,opencc } from "../component/navbar1.js"
 document.querySelector("#navbar").innerHTML=navbar();
-
-
+ closecc();
+ document.getElementById("open").addEventListener("click",openForm);
+document.getElementById("custc").addEventListener("click",opencc);
+document.querySelector("#login").addEventListener("click",checkLogin);
+document.getElementById("close").addEventListener("click",closeForm);
+document.getElementById("ccclose").addEventListener("click",closecc);
 let checkout11=    JSON.parse(localStorage.getItem("addToCart")) ||[];
 
  function create(a){
