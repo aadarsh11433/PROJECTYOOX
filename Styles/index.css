@@ -137,5 +137,6 @@ a{
    width: 116px;
    margin-top: 2px;
    margin-left: -100px;
+   filter: brightness(120%);
 
 }
