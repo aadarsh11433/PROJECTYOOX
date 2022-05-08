@@ -156,6 +156,7 @@ function menBestOffers(){
     <div id="innerRight" class="innerRight">
         <div id="innerRight1">
             <img src="" alt="">
+            <p>Best Offers</p>
         </div>
         <div id="innerRight2">
             <img src="https://www.yoox.com/images/items/13/13723856nf_14_f.jpg?width=210&height=272&impolicy=crop&gravity=Center" alt="">
