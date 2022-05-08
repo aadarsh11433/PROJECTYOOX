@@ -10,7 +10,11 @@
 
 
     <link rel="stylesheet" href="./Styles/footer.css">
-    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="/PROJECTYOOX/Styles/navbar.css">
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
 </head>
 <body>
 
@@ -61,10 +65,16 @@
  document.getElementById("footer").innerHTML= footer();
 
 
- import { navbar, openForm, closeForm,checkLogin } from "./component/navbar.js"
+ import { navbar, openForm, closeForm,checkLogin,closecc,opencc } from "./component/navbar1.js"
  
+  
  document.getElementById("header").innerHTML= navbar();
-
+closecc();
 //  import navbar from "./component/navbar1.js"
+document.getElementById("open").addEventListener("click",openForm);
+document.getElementById("custc").addEventListener("click",opencc);
+document.querySelector("#login").addEventListener("click",checkLogin);
+document.getElementById("close").addEventListener("click",closeForm);
+document.getElementById("ccclose").addEventListener("click",closecc);
 
 </script>

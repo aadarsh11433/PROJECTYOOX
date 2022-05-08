@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,20 +9,25 @@
     <link rel="stylesheet" href="./Styles/subnav.css">
 
     <link rel="stylesheet" href="./Styles/footer.css">
-    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="/PROJECTYOOX/Styles/navbar.css">
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
     <title>YOOX | Design</title>
 </head>
+
 <body>
 
-<header id="header"></header>
+    <header id="header"></header>
 
     <div class="tophead">
         <div id="subhead">
-          <p><a href="design.html">DESIGN</a></p>
-          <p><a href="art.html">ART</a></p>
-          <p><a href="collaboration.html">COLLABORATIONS</a></p>
+            <p><a href="design.html">DESIGN</a></p>
+            <p><a href="art.html">ART</a></p>
+            <p><a href="collaboration.html">COLLABORATIONS</a></p>
         </div>
-      </div>
+    </div>
 
     <div class="maincontainer">
         <div class="subcontainer" id="subcontainer1">
@@ -58,30 +64,39 @@
         </div>
 
         <div class="" id="subcontainer4">
-            <img src="https://www.yoox.com/images/yoox80/banners/6825_1_Seletti_LoveBloom_Second.jpg?634485886601286852" alt="">
+            <img src="https://www.yoox.com/images/yoox80/banners/6825_1_Seletti_LoveBloom_Second.jpg?634485886601286852"
+                alt="">
             <p>SELETTI</p>
             <p>THE NEW VERSION OF LOVE IN BLOOM</p>
 
         </div>
 
-       
+
 
     </div>
     <footer id="footer"></footer>
 </body>
+
 </html>
 
 <script type="module">
 
-    import  footer  from "./component/footer1.js"
-   
-    document.getElementById("footer").innerHTML= footer();
-   
-   
-    import { navbar, openForm, closeForm,checkLogin } from "./component/navbar.js"
+    import footer from "./component/footer1.js"
+
+    document.getElementById("footer").innerHTML = footer();
+
+
+    import { navbar, openForm, closeForm,checkLogin,closecc,opencc } from "./component/navbar1.js"
  
- document.getElementById("header").innerHTML= navbar();
-   
-   //  import navbar from "./component/navbar1.js"
-   
-   </script>
+  
+  document.getElementById("header").innerHTML= navbar();
+ closecc();
+ //  import navbar from "./component/navbar1.js"
+ document.getElementById("open").addEventListener("click",openForm);
+document.getElementById("custc").addEventListener("click",opencc);
+document.querySelector("#login").addEventListener("click",checkLogin);
+document.getElementById("close").addEventListener("click",closeForm);
+document.getElementById("ccclose").addEventListener("click",closecc);
+
+
+</script>
