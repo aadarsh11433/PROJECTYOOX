@@ -257,7 +257,7 @@ function filteroptions(){
 
  let filterfunctions = ()=>
 {
-    `
+     return `
     document.getElementById("categories_filter").addEventListener("click",()=>{
      document.getElementById("li_in_category").style.display = "Block";
      document.getElementById("li_in_designers").style.display = "none"

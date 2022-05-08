@@ -29,7 +29,7 @@ function navbar(){
    <h2 id="logo"><a href=""><img src="logo.jpg" alt="" id="logoo"></a></h2>
    <div>
     <a href=""><i class="fas fa-search  icon" id="searchicon" ></i></a>
-    <a href=""><i class="far fa-heart  icon" style="font-weight: normal;" id="hearticon"></i></a>
+    <a href="dreambox.html"><i class="far fa-heart  icon" style="font-weight: normal;" id="hearticon"></i></a>
     <a href="cart.html"><i class="fas fa-shopping-bag  icon" id="bagicon"></i></a>
     
    </div>

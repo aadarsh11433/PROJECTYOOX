@@ -1,15 +1,15 @@
 #navbar{
    
     background-color: white;
-   
+   margin: 0px -10px 0px -8px;
    height: 108px;
-   width: 100%;
+   /* width: 100%; */
 }
 body{
    background-color: #E6E6FA;
 }
 
-#options{
+ #navbar #options{
    display: flex;
    gap: 20px;
    width: 100%;
