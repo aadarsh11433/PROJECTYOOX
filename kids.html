@@ -13,7 +13,7 @@
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
- 
+    <link rel="stylesheet" href="Styles/index.css">
     <style>
         body{
             background-color: #f3f3f3;
@@ -25,9 +25,9 @@
             display: flex;
             /* border: 1px solid black; */
             background-color: #333333;
-            position: fixed;
+            /* position: fixed; */
             overflow: hidden;
-            margin-top: 80px;
+            /* margin-top: 80px; */
             z-index: 100;
             
             
@@ -423,112 +423,7 @@
 </head>
 <body>
 
-    <div id="top-navbar-div">
-        <div class="top-2-div">
-            <select name="" id="select">
-                <option value="">INDIA</option>
-            </select>
-            <a href="customer.html" id="p" onclick="document.getElementById('navbar-opts').style.display='block'">CUSTOMER CARE</a>
-        </div>
-        <div class="top-2-div">
-            <p><span><i class="fa-solid fa-pencil"></i></span>REGISTER</p>
-            <p><span><i class="fa-solid fa-unlock-keyhole"></i></span>LOGIN</p>
-        </div>
-    </div>
-
-    <div id="navbar-logo">
-        <div id="navbar-logo-div1">
-            <p class="p2">WOMEN</p>
-            <p class="p2">MEN</p>
-            <p class="p2">KIDS</p>
-            <p class="p2">DESIGN+ART</p>
-        </div>
-        <div id="navbar-logo-div2">
-            <img id="logo-img" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/
-            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
-            m66W17MbxeM8rKjHW/lkI7OKeOuvrp2nc2kZv+gc7IH8qswKnK3yfwaLn7XVjqv8AzH27
-            TKVlHdYKw4ayqYQTjjc3H8EfZfXI0vzUl8nP6etc6ZVf5f7kt0DdWXOwRDvA+Wm/Rfz5d
-            PxhWGHY51LftFJy+K8fKafp9kkUorAgCAIAgCAw7ogIFrLRFdqC9fHU1VTxR901m2QHPGfJ
-            QcjFdsvJM0fFc3Xg0OqUW+9kp0zbpbRY6O3zPa+SBm0ub0PJKlVQ8IKJS5t6yMidqX6ns2
-            jl0IxAdVdnjLnVyV1rnbTzyHdJE8fI4+Yx0Kg3Yam9xNFxvPyxoKq1bivX8SNRdmd+fJtk
-            ko42f394XfjCjLBsLmX1NiqO4p7LC0jpWl03TvaxxmqZcd7M4Yz9B5BWFNEal0ZXkeTtzp7
-            l0l6RIl3K4hWsNCQ32f42klFNWkAO3DLJPXyP1UTIxVb2umXnF83PDj9ua8oEQHZpfjLtL
-            qMN/v7w/thQ/wABZ6L9/UuHrfi9/wCxN9HaNg07uqJpPiK542mTbgMHk0fyp1GMqu/bM3
-            yfL2ZzUdeMV8f9nz11pm46kfSspamCGCHcS2QHLnHjPHkF5k0ytSSZ9cRyNWA5SnFts7W
-            htMv03QVEc8rJaieXe5zBxgDAH7/dfWPR9mOjny3IrPtUktJI+2tNPnUVo+EjeyOdsgfH
-            I8ZAPj+Mr3Ip+7DRz4zO/BZCt9r5NZobStx03VVRqKuGaCoaMtYCCHDoefX9lzx6J1N7f
-            RL5flKs+MfGOmv7kzb05UsozKAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAg
-            CAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIA
-            gCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAI
-            AgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAID//
-            2Q==" alt="">
-        </div>
-        <div id="navbar-logo-div3">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-light fa-heart"></i>
-            <i class="fa-light fa-bag-shopping"></i>
-        </div>
-    </div>
+    <div id="navbar"></div>
 
     <div id="head-name">
         <div id="head-name-box">
@@ -812,3 +707,4 @@
           </script>
 </body>
 </html>
+<script src="./scripts/index.js" type="module"></script>

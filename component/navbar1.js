@@ -76,7 +76,7 @@ function navbar() {
    <div>
     <a href=""><i class="fas fa-search  icon" id="searchicon" ></i></a>
     <a href="dreambox.html"><i class="far fa-heart  icon" style="font-weight: normal;" id="hearticon"></i></a>
-    <a href="cart.html"><i class="fas fa-shopping-bag  icon" id="bagicon"></i></a>
+    <a href="checkout.html"><i class="fas fa-shopping-bag  icon" id="bagicon"></i></a>
     
    </div>
    
