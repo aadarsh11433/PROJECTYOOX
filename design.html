@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles/design.css">
+    <link rel="stylesheet" href="./Styles/subnav.css">
+
+    <link rel="stylesheet" href="./Styles/footer.css">
+    <link rel="stylesheet" href="navbar.css">
+    <title>YOOX | Design</title>
+</head>
+<body>
+
+<header id="header"></header>
+
+    <div class="tophead">
+        <div id="subhead">
+          <p><a href="design.html">DESIGN</a></p>
+          <p><a href="art.html">ART</a></p>
+          <p><a href="collaboration.html">COLLABORATIONS</a></p>
+        </div>
+      </div>
+
+    <div class="maincontainer">
+        <div class="subcontainer" id="subcontainer1">
+            <h3>CATEGORIES</h3>
+            <p>CHAIRS AND BENCHES</p>
+            <p>VASES</p>
+            <p>BOOKS</p>
+            <p>FURNISHINGS</p>
+            <p>PILLOWS AND PILLOW CASES</p>
+            <p>DINING</p>
+            <p>HOME ACCESSORIES</p>
+        </div>
+
+        <div class="subcontainer" id="subcontainer2">
+            <h3>BRANDS</h3>
+            <p>ALESSI</p>
+            <p>FERM LIVING</p>
+            <p>FORNASETTI</p>
+            <p>MEMPHIS MILANO</p>
+            <p>MISSONI</p>
+            <p>POST DESIGN</p>
+            <p>RICHARD GINORI</p>
+            <p>SELETTI</p>
+            <p>VENINI</p>
+        </div>
+
+        <div class="subcontainer" id="subcontainer3">
+            <h3>DESIGNERS</h3>
+            <p>ACHILLE E PIERGIACOMO CASTIGLIONI</p>
+            <p>NATHALIE DU PASQUIER</p>
+            <p>ETTORE SOTTSASS</p>
+            <p>PHILIPPE STARK</p>
+            <p>JASPER MORRISON</p>
+        </div>
+
+        <div class="" id="subcontainer4">
+            <img src="https://www.yoox.com/images/yoox80/banners/6825_1_Seletti_LoveBloom_Second.jpg?634485886601286852" alt="">
+            <p>SELETTI</p>
+            <p>THE NEW VERSION OF LOVE IN BLOOM</p>
+
+        </div>
+
+       
+
+    </div>
+    <footer id="footer"></footer>
+</body>
+</html>
+
+<script type="module">
+
+    import  footer  from "./component/footer1.js"
+   
+    document.getElementById("footer").innerHTML= footer();
+   
+   
+    import { navbar, openForm, closeForm,checkLogin } from "./component/navbar.js"
+ 
+ document.getElementById("header").innerHTML= navbar();
+   
+   //  import navbar from "./component/navbar1.js"
+   
+   </script>
