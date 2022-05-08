@@ -1,5 +1,5 @@
 
-import {navbar,openForm , closeForm ,checkLogin} from "../component/navbar.js"
+import {navbar ,openForm, closeForm,checkLogin ,closecc,opencc} from "../component/navbar1.js";
 
 document.getElementById("navbar").innerHTML= navbar();
 
@@ -41,7 +41,7 @@ document.getElementById("navbar").innerHTML= navbar();
          console.log(check);
         const fname = document.querySelector("#fname").value;
         const lname = document.querySelector("#lname").value;
-        const email = document.querySelector("#email").value;
+        const email = document.querySelector("#emailid").value;
         const password = document.querySelector("#pass").value;
         const mobile = document.querySelector("#mobile").value;
         const dob = document.querySelector("#bdate").value;
@@ -85,8 +85,10 @@ document.getElementById("navbar").innerHTML= navbar();
 
 // Login Page 
 document.getElementById("open").addEventListener("click",openForm);
+document.getElementById("custc").addEventListener("click",opencc);
 document.querySelector("#login").addEventListener("click",checkLogin);
 document.getElementById("close").addEventListener("click",closeForm);
+document.getElementById("ccclose").addEventListener("click",closecc);
 
 
 
