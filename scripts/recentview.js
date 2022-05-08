@@ -23,7 +23,7 @@ data.forEach(({name,category,img,price,off,finalPrice,date,month})=>{
         document.getElementById("today").append(box)
     }
     else {
-        previousName.innerText = "PREVIOUSLY VIEWED"
+        // previousName.innerText = "PREVIOUSLY VIEWED"
         let box = document.createElement("div")
         let image = document.createElement("img")
         image.src = img

@@ -1,0 +1,66 @@
+#dreamcontent{
+    /* border: 1px solid; */
+    width: 85%;
+    /* height: 500px; */
+    margin:  10px auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: white;
+    min-height: 400px;
+    gap: 20px;
+}
+#shopweekend{
+   
+    width: 85%;
+    /* height: 500px; */
+    margin:  10px auto;
+}
+
+#shopweekend img{
+    height: 100%;
+    width: 100%;
+}
+#dreamcontent >div{
+  
+    text-align: center;
+
+}
+
+#dreamcontent >div >div:first-child{
+    height: 400px;
+
+
+}
+.proimg{
+    height: 80%;
+    width: 100%;
+
+}
+/* #dreamcontent button:first-child{
+    z-index: 100;
+    text-align: right;
+    margin-top: -200px;
+} */
+.xbtn{
+  /* margin-top: -300px; */
+  border:none;
+  font-size: 20px;
+  margin:5% 90%;
+  background-color: white;
+}
+.gifimg{
+    margin-left: 40%;
+}
+.empty{
+    width: 60%;
+    margin:  10px auto;
+    text-align: center;
+}
+.starbutton{
+    margin:  10px 40%;
+    width: 20%;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    cursor: pointer;
+}

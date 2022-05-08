@@ -1,111 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment Page</title>
-    <link rel="stylesheet" href="/styles/payment.css">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@700&family=PT+Sans&display=swap');
+
+        body {
+            font-family: Montserrat, sans-serif;
+            background-color: #f3f3f3;
+        }
+
+        #navbar {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 80px;
+            background-color: white;
+
+        }
+
+        #helpb {
+            height: 30px;
+            border: none;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        #external {
+            width: 70%;
+            display: flex;
+            /* border: red 1px solid; */
+            height: auto;
+            margin: auto;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        #left {
+            width: 60%;
+            /* border: green 1px solid; */
+        }
+
+        #left div {
+            background-color: white;
+            padding: 15px;
+        }
+
+        #right {
+            width: 40%;
+           background-color: white;
+        }
+
+        .left21 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 20px;
+        }
+
+        .left21 input {
+            width: 90%;
+            height: 30px;
+        }
+
+        .b1 {
+            background-color: #333333;
+            color: white;
+            border: none;
+            padding: 15px;
+            margin-left: 350px;
+            cursor: pointer;
+        }
+
+        img {
+            width: 30px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .divstyle {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #payment_details {
+            padding: 10px;
+        }
+
+        #footer {
+            padding: 20px;
+            background-color: #333333;
+            margin: -8px;
+            margin-top: 50px;
+
+        }
+
+        #footer p {
+            text-align: center;
+        }
+
+        #footer p:first-child {
+            color: white;
+        }
+
+        #footer p:first-child span:first-child {
+            cursor: pointer;
+        }
+        #icons{
+            display: flex;
+            justify-content: space-evenly;
+            width: 60%;
+            align-items: center;
+        }
+    </style>
 </head>
+
 <body>
-    <div id="header"></div>
+    <div id="navbar">
+        <div></div>
+        <a href="index.html"><img src="https://pbs.twimg.com/profile_images/1500895073965416449/ynLa9JCR_400x400.jpg"
+                alt="logo" style="width: 100px; height:70px" /></a>
+        <button id="helpb">Need help? v</button>
+    </div>
+    <hr style="margin-top:0px">
 
-    <div id="address_price">
-       
-        <div id="address">
-  
-         <div id="email">
-             <h1>Email</h1> <span>Modify</span>
-             <p>You are ordering as aadarsh11433@gmail.com</p>
-         </div>
-          <div id="shipping">
+    <div id="external">
+        <div id="left">
+            <div id="left1">
+                <div id="email" style="display: flex; align-items: center; justify-content: space-between;">
+                    <h2>Email</h2>
+                    <p>MODIFY</p>
+                </div>
+                <p>You are ordering as emailid from local storage</p>
+            </div><br>
 
-            <h1>Shipping</h1> <span>Modify</span>
-            <p>RECIPiENT</p>
-            <p>name of the recipent</p>
-            <p>address of recipent</p>
-            <p>contact of recipent</p>
-
-            <p>Shipping method</p>
-            <p>Standard- 12 -15 bussiness days </p>
-          </div>
-             <div id="payment">
-                 <h1>Payment</h1>
-
-                 <p>select Payment Method</p>
-
-                 <input type="checkbox"> <span>Credit card</span>
-                 <img src="https://www.yoox.com/media/yoox/apps/yoox-checkout/payment/credit-cards/img_payment_Visa.png" alt="">
-                 <img src="https://www.yoox.com/media/yoox/apps/yoox-checkout/payment/credit-cards/img_payment_mastercard.png" alt="">
-                 <img src="https://www.yoox.com/media/yoox/apps/yoox-checkout/payment/credit-cards/img_payment_amex.png" alt="">
-                 <img src="https://www.yoox.com/media/yoox/apps/yoox-checkout/payment/credit-cards/img_payment_Discover.png" alt="">
-                 <img src="https://www.yoox.com/media/yoox/apps/yoox-checkout/payment/credit-cards/img_payment_JCB.png" alt=""> 
-                 <span>free</span>
-                 <input type="checkbox"> <span>PayPal</span>
-                 <img src="https://www.yoox.com/media/yoox/apps/yoox-checkout/payment/credit-cards/img_payment_PayPal_extended_2.png" alt="">
-                 <span>free</span>
-
-
-             </div>
-
-             <div id="newcard">
-            <p>NEW CARD</p>
-            <label for="">Enter Payment Details</label>
-            <input type="text" placeholder="NEW CARD">
-            <img src="https://www.yoox.com/media/yoox/apps/yoox-checkout/payment/credit-cards/img_payment_Visa.png" alt="">
-            <img src="https://www.yoox.com/media/yoox/apps/yoox-checkout/payment/credit-cards/img_payment_mastercard.png" alt="">
-            <img src="https://www.yoox.com/media/yoox/apps/yoox-checkout/payment/credit-cards/img_payment_amex.png" alt="">
-            <img src="https://www.yoox.com/media/yoox/apps/yoox-checkout/payment/credit-cards/img_payment_Discover.png" alt="">
-            <img src="https://www.yoox.com/media/yoox/apps/yoox-checkout/payment/credit-cards/img_payment_JCB.png" alt=""> 
-
-        <label for="">Enter expiration date</label>
-        <select name="" id="month">MONTH</select>
+            <div id="left2">
+                <h2>Shipping</h2>
+                <p>Enter shopping details</p>
+                <div class="left21">
+                    <input type="text" placeholder="FIRST NAME" required>
+                    <input type="text" placeholder="LAST NAME" required>
+                    <input type="text" placeholder="C/O">
+                    <input type="text" placeholder="TELEPHONE" required>
+                    <input type="text" placeholder="STREET NAME AND NUMBER" required>
+                    <input type="text" placeholder="ZIP CODE" required>
+                    <input type="text" placeholder="CITY" required>
+                    <input type="text" placeholder="STATE/PROVINCE" required>
+                    <input type="text" placeholder="INDIA" readonly>
+                </div>
+                <input type="checkbox"><label for="">Save this address in MYOOX</label><br>
+                <input type="checkbox"><label for="">Set as default</label><br>
+                <button class="b1">SHIP TO THIS ADDRESS</button>
+            </div><br>
 
 
-             </div>
+            <div id="left3">
+                <h2>Payment</h2>
+                <p>Select payment method</p>
+                <div id="left31" style="display: flex; gap: 5px;align-items: center;justify-content: space-around;">
+                    <div><input type="radio">Credit Card</div>
+                    <div>
+                        <img src="https://www.yoox.com/media/yoox/apps/yoox-checkout/payment/credit-cards/img_payment_Visa.png"
+                            alt="">
+                        <img src="https://www.yoox.com/media/yoox/apps/yoox-checkout/payment/credit-cards/img_payment_mastercard.png"
+                            alt="">
+                        <img src="https://www.yoox.com/media/yoox/apps/yoox-checkout/payment/credit-cards/img_payment_amex.png"
+                            alt="">
+                        <img src="https://www.yoox.com/media/yoox/apps/yoox-checkout/payment/credit-cards/img_payment_Discover.png"
+                            alt="">
+                        <img src="https://www.yoox.com/media/yoox/apps/yoox-checkout/payment/credit-cards/img_payment_JCB.png"
+                            alt="">
+                    </div>
+                    <p>free</p>
+                </div>
+
+                <p>NEW CARD</p>
+                <p>Enter payment details</p>
+                <div class="divstyle">
+                    <input type="text">
+                    <div>
+                        <img src="https://www.yoox.com/media/yoox/apps/yoox-checkout/payment/credit-cards/img_payment_Visa.png"
+                            alt="">
+                        <img src="https://www.yoox.com/media/yoox/apps/yoox-checkout/payment/credit-cards/img_payment_mastercard.png"
+                            alt="">
+                        <img src="https://www.yoox.com/media/yoox/apps/yoox-checkout/payment/credit-cards/img_payment_amex.png"
+                            alt="">
+                        <img src="https://www.yoox.com/media/yoox/apps/yoox-checkout/payment/credit-cards/img_payment_Discover.png"
+                            alt="">
+                        <img src="https://www.yoox.com/media/yoox/apps/yoox-checkout/payment/credit-cards/img_payment_JCB.png"
+                            alt="">
+                    </div>
+                </div>
+
+                <p>Enter expiration date</p>
+                <div class="divstyle">
+                    <input type="month" placeholder="MONTH">
+                    <input type="text" placeholder="YEAR">
+                </div>
+
+                <p>Enter card holder details</p>
+                <div class="left21">
+                    <input type="text" placeholder="FIRST NAME" required>
+                    <input type="text" placeholder="LAST NAME" required>
+                    <input type="text" placeholder="ADDRESS" required>
+                    <input type="text" placeholder="CITY" required>
+                    <input type="text" placeholder="ZIP CODE" required>
+                    <input type="text" placeholder="STATE/PROVINCE" required>
+                    <input type="text" placeholder="INDIA" readonly>
+                </div>
+                <p>YOOX may contact you for further payment verification prior to shipping your order. In this case,
+                    delivery times may be subject to delay.</p>
+                <input type="checkbox"><label for="">Save this address in MYOOX</label><br>
+                <input type="checkbox"><label for="">Set as default</label><br>
+
+                <p>BILLING ADDRESS</p>
+                <input type="checkbox"><label for="">Use Shipping address</label><br>
+
+                <p style="font-size:12px;">
+                    The personal information provided by you when purchasing items will be collected by YOOX in order to
+                    process your order and for other steps necessary to it, including operations related to
+                    administrative and fiscal obligations.
+                    The telephone number you have provided may be used to communicate information related to the
+                    deliveries of your orders. The parties appointed for collecting your information are the staff
+                    responsible for managing the site and the services related to it, marketing, information systems and
+                    administration.
+                    Consult our <u>Privacy Policy</u> for more information about your rights.
+                    Consult our <u>General Terms and Conditions of Sale.</u>
+                </p>
+                <button class="b1">PAY NOW</button>
+            </div><br>
+
+            <div>
+                <h2 style="color: grey;">Review and Complete</h2>
+            </div>
+
         </div>
-        <div id="payment_details">
-             <h1>Your Order</h1>
-             <span>no. of items</span>
-             <p>TOTAL FOR ITEMS</p>
-             <p>price from local storage</p>
+        <div id="right">
 
-             <p>SHIPPING</p>
-             <p>Standard- 12 -15 bussiness days </p>
-             <p>SHIPPING COSTS</p>
-             <p>free</p>
-             <p>PAYMENT</p>
-             <p>Free Credit Card</p>
+            <div id="payment_details">
+                <h1>Your Order</h1>
+                <p>no. of items</p>
+                <h4>TOTAL FOR ITEMS</h4>
+                <p>price from local storage</p>
 
-             <p>SALES TAX</p>
-             <P>$150.85</P>
+                <h4>SHIPPING</h4>
+                <p>Standard- 12 -15 bussiness days </p>
+                <h4>SHIPPING COSTS</h4>
+                <p>free</p>
+                <h4>PAYMENT</h4>
+                <p>Free Credit Card</p>
+
+                <h4>SALES TAX</h4>
+                <P>$150.85</P>
+            </div>
         </div>
-
-        
     </div>
 
-   <div id="FAQS">
-       <h1>Frequently Asked Questions</h1>
-       <div>
-           <p>IS IT SAFE TO ENTER MY CREDIT/DEBIT CARD DATA?</p>
-           <P>YOOX can guarantee every payment transaction is absolutely safe: we have adopted the SSL3 protocol for the transmission of sensitive information, currently the highest of security standards. You can read the Trustwave and VeriSign certificates which guarantee the reliability of our servers and site. Your card data will be totally illegible to third parties.</P>
-       </div> 
-       <div>
-          <p>HOW CAN I ACCESS FAST CHECKOUT?</p>
-        <p>If you are registered with MYOOX, you can save your Credit or Debit Card details from the Shopping Bag and take advantage of our Fast Checkout for your future orders: this page will already be filled in for you. At any time you can update or delete the payment details through MYOOX.</p>
-       </div>
+    <div id="icons">
+        <p>SECURE CHECKOUT</p>
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+    </div>
 
-   </div>
+    <div id="FAQS">
+        <h1>Frequently Asked Questions</h1>
+        <div>
+            <p>IS IT SAFE TO ENTER MY CREDIT/DEBIT CARD DATA?</p>
+            <P>YOOX can guarantee every payment transaction is absolutely safe: we have adopted the SSL3 protocol for
+                the transmission of sensitive information, currently the highest of security standards. You can read the
+                Trustwave and VeriSign certificates which guarantee the reliability of our servers and site. Your card
+                data will be totally illegible to third parties.</P>
+        </div>
+        <div>
+            <p>HOW CAN I ACCESS FAST CHECKOUT?</p>
+            <p>If you are registered with MYOOX, you can save your Credit or Debit Card details from the Shopping Bag
+                and take advantage of our Fast Checkout for your future orders: this page will already be filled in for
+                you. At any time you can update or delete the payment details through MYOOX.</p>
+        </div>
 
-   <div id="footer">
-       <p><span>Powered by YOOX NET-A-PORTER GROUP</span>- Copyright © 2000-2022 YOOX NET-A-PORTER GROUP S.p.A. - All Rights Reserved - SIAE Licence # 401/I/526</p>
-       <p>
-           <span>COOKIE POLICY</span>
-           <span>/</span>
-           <span>LEGAL AREA</span>
-           <span>/</span>
-           <span>PRIVACY POLICY</span>
+    </div>
+
+    <div id="footer">
+        <p><span>Powered by YOOX NET-A-PORTER GROUP</span>- Copyright © 2000-2022 YOOX NET-A-PORTER GROUP S.p.A. - All
+            Rights Reserved - SIAE Licence # 401/I/526</p>
+        <p>
+            <span>COOKIE POLICY</span>
+            <span>/</span>
+            <span>LEGAL AREA</span>
+            <span>/</span>
+            <span>PRIVACY POLICY</span>
         </p>
-   </div>
+    </div>
 </body>
+
 </html>

@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@700&family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source Sans Pro');
+#box {
+    margin: auto;
+    width: 30%;
+    text-align: center;
+  
+}
+.fa {
+    font-size: 25px;
+    /* width: 380px; */
+    text-align: center;
+    text-decoration: none;
+    margin: auto;
+}
+
+.fa-facebook {
+    margin-left: 10px;
+    background: #3B5998;
+    color: white;
+}
+
+#google {
+    width: 400px;
+    background-color: white;
+    border: 0.5px solid grey;
+    padding: 10px;
+    margin: 10px;
+}
+
+.small {
+    font-size: 12px;
+    width: 100%;
+    height: 16px;
+    text-align: left;
+    font-family: Source Sans Pro, sans-serif;
+}
+
+p~input {
+    background-color: #f6f6f6;
+    border: none;
+    padding: 12px;
+    width: 380px;
+    margin: 10px;
+    text-align: left;
+}
+
+#register {
+    background-color: #333333;
+    color: white;
+    width: 400px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    text-align: center;
+}
+
+#upbox {
+    height: 170px;
+    width: 100%;
+    background-color: #f6f6f6;
+    text-align: center;
+    padding: 10px;
+    line-height: 8px;
+}
+
+#fb {
+    background-color: #3B5998;
+    border: none;
+    width: 400px;
+    margin: 10px;
+    color: white;
+    padding: 10px;
+}
+
+#downbox {
+    width: 100%;
+    height: 120px;
+    background-color: #333333;
+    text-align: center;
+    color: white;
+    padding: 40px;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+}
+
+#r {
+    font-style: italic;
+    font-family: SourceSansProBold, sans-serif;
+    display: flex;
+    width: 400px;
+    text-align: center;
+}
+
+p {
+    font-size: 15px;
+}
+

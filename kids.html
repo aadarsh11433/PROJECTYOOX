@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+    src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous" ></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="Styles/index.css">
+    <style>
+        body{
+            background-color: #f3f3f3;
+        }
+        #head-name{
+            width: 100%;
+            height: 40px;
+            margin: auto;
+            display: flex;
+            /* border: 1px solid black; */
+            background-color: #333333;
+            /* position: fixed; */
+            overflow: hidden;
+            /* margin-top: 80px; */
+            z-index: 100;
+            
+            
+        }
+        #head-name-box{
+            width: 30%;
+            height: 50px;
+            margin: auto;
+            display: flex;
+            justify-content: space-evenly;
+           font-size: 13px;
+           font-family: sans-serif;
+           font-weight: lighter;
+           color: white;
+           cursor: pointer;
+        }
+        .head-name-bar:hover{
+            color: rgb(208, 204, 204);
+        }
+        #top-image{
+            width: 100%;
+            margin: auto;
+            /* border: 1px solid black; */
+            /* overflow: hidden; */
+            /* margin-top: 100px; */
+        }
+        #top-image>img{
+            width: 100%;
+            height: 600px;
+        }
+        #top-image1{
+            width: 90%;
+            margin: auto;
+            /* border: 1px solid black; */
+            overflow: hidden;
+            margin-top: 50px;
+        }
+        #top-image1>img{
+            width: 100%;
+            height: 600px;
+
+        }
+        #on-image{
+            height: 150px;
+            width: 400px;
+            /* border: 1px solid black; */
+            margin-top: -180px;
+            background-color: white;
+            margin-left: 30px;
+            position: absolute;
+            padding-left: 20px;
+            overflow: hidden;
+        }
+        #image-text{
+            font-size: 15px;
+            justify-content: space-evenly;
+            cursor: pointer;
+        }
+       
+        .on-img-ops1{
+            text-decoration: underline;
+        }
+        .on-img-ops1:hover{
+            color: gray;
+        }
+        .on-img-ops2{
+            text-decoration: underline;
+            margin-left: 25px;
+        }
+        .on-img-ops2:hover{
+            color: gray;
+        }
+
+
+
+
+        #des-name{
+            text-align: center;
+            font-size: 28px;
+            font-family: sans-serif;
+            font-weight: lighter;
+            margin-top: 50px;
+        }
+        #des-opt{
+            justify-content: center;
+            display: flex;
+            margin: auto;
+        }
+        #des-opt1{
+            padding-right: 20px;
+            border-right: 1px solid black;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        #des-opt2{
+            padding-left: 20px;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        #cat-select{
+            /* border: 1px solid black; */
+            width: 80%;
+            height: 500px;
+            margin: auto;
+            display: flex;
+            margin-top: 50px;
+            
+        }
+        #cat-div{
+            /* border: 1px solid black; */
+            height: 500px;
+            margin: auto;
+            width: 28%;
+            background-color: white;
+        }
+        .cat-div-head{
+            font-size: 13px;
+            font-family: sans-serif;
+            font-weight:lighter;
+            letter-spacing: 0.15em;
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        .cat-div-ops{
+            font-size: 14px;
+            font-family: sans-serif;
+            line-height: 20px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .cat-div-ops:hover{
+            color: rgb(167, 163, 163);
+        }
+        .cat-div-view{
+            text-align: center;
+            margin-top: 150px;
+            font-size: 14px;
+            font-family: sans-serif;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .cat-div-view:hover{
+            color: rgb(184, 183, 183);
+        }
+
+        #two-div{
+            display: flex;
+            margin: auto;
+            margin-top: 50px;
+        }
+        #two-div1{
+            background-color: white;
+            text-align: center;
+            margin-left: 300px;
+        }
+        #two-div2{
+            background-color: white;
+            text-align: center;
+            margin-left: 15px;
+        }
+        #two-divname{
+            font-size: 32px;
+            font-family: sans-serif;
+            text-align: center;
+            margin-top: 230px;
+            font-weight: 100;
+           
+        }
+        #div-divname{
+            width: 100px;
+            height: 250px;
+            padding-left: 80px;
+        }
+        .prod-name{
+            font-family: sans-serif;
+            font-size: 14px;
+            font-weight: lighter;
+        }
+        .prod-type,.prod-price{
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+        #main-divbox{
+            margin: auto;
+            display: flex;
+            margin-top: 50px;
+        }
+        #below-image{
+            text-align: center;
+        }
+        .image-info{
+            margin-left: 80px;
+        }
+        #navbar-top{
+            width: 100%;
+            height: 40px;
+            border: 1px solid red;
+            font-size: 13px;
+            color: white;
+            padding-left: 50px;
+            
+        }
+        #navbar-opts{
+            text-decoration: none;
+            color: black;
+            text-decoration: underline;
+            margin-left: 20px;
+            position: absolute;
+            overflow: auto;
+        }
+        #navbar-opts:hover{
+            text-decoration: none;
+        }
+        #navbar-sel-opts{
+            border: 0px;
+            text-decoration: underline;
+            font-size: 13px;
+        }
+        #navbar-sel-opts:hover{
+            text-decoration: none;
+        }
+    
+        #top-navbar-div{
+            margin: auto;
+            width: 100%;
+            height: 40px;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: space-around;
+            background-color: white;
+            position: fixed;
+            overflow: hidden;
+            margin-top: -10px;
+            z-index: 100;
+            /* margin-top: -10px; */
+
+        }
+        .top-2-div{
+            /* border: 1px solid teal; */
+            width: 18%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            font-size: 13px;
+            font-family: sans-serif;
+        }
+        #p{
+            text-decoration: underline;
+            font-size: 13px;
+            color: black;
+        }
+        #p:hover{
+            text-decoration: none;
+            background-color: #f3f3f3;
+        }
+        #select{
+            border: none;
+            text-decoration: underline;
+            font-size: 13px;
+        }
+        #select:hover{
+            text-decoration: none;
+            background-color: #f3f3f3;
+        }
+        #navbar-logo{
+            margin: auto;
+            width: 100%;
+            height: 80px;
+            /* border: 1px solid black; */
+            display: flex;
+            background-color: white;
+            margin-top: 20px;
+            margin-bottom: -50px;
+            position: absolute;
+            position: fixed;
+            overflow: hidden;
+            z-index: 100;
+            /* justify-content: space-around; */
+        }
+        #navbar-logo-div1,#navbar-logo-div3{
+            display: flex;
+            /* border: 1px solid teal; */
+            justify-content: space-evenly;
+            width: 20%;
+            align-items: center;
+            margin-left: 260px;
+            /* text-decoration: line-through; */
+        }
+        #navbar-logo-div2{
+            display: flex;
+            /* border: 1px solid teal; */
+            justify-content: space-evenly;
+            width: 10%;
+            align-items: center;
+            margin-left: 170px;
+        }
+        .p2{
+            font-size: 13px;
+            font-family: sans-serif;
+        }
+       #logo-img{
+        height: 80px;
+        width: 100px;
+       }
+
+
+    
+         .slidingbox{
+        /* margin-top: 40px; */
+        width: 100%;
+         }
+  .main-carousel{
+      margin-left: 70px;
+      width: 75%;
+      margin: auto;    
+      height: 500px;  
+  }
+  
+  .cell{
+       width:32%;
+       height: 550px;
+      margin: 0px 8px;
+      overflow: hidden;
+     text-align: center;
+     line-height: 10px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+      background-color: white;
+  }
+  .cell img{
+      width: 100%;
+      height: 380px;
+    
+  }
+.cell>p{
+    font-size: 14px;
+    font-family: Montserrat, sans-serif;
+    color: #333333;
+}
+.cell1>p{
+    font-size: 14px;
+    font-family: Montserrat, sans-serif;
+    color: #333333;
+
+}
+.cell>h4{
+    font-size: 16px;
+    font-family: Montserrat, sans-serif;
+    color: #333333;
+}
+.prod-name{
+            font-family: sans-serif;
+            font-size: 14px;
+            font-weight: lighter;
+        }
+        .prod-type,.prod-price{
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+        #dataslide-name{
+            font-size: 25px;
+            font-family: sans-serif;
+            text-align: center;
+            margin-top: 60%;
+        }
+        #dataslide-view{
+            font-size: 12px;
+            font-family: sans-serif;
+            text-align: center;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        #dataslide-view:hover{
+            text-decoration: none;
+        }
+        #slidebar
+        {
+            height: 550px;
+            width: 100%;
+            /* border: 1px solid red; */
+            display: flex;
+            margin-top: 50px;
+        }
+        #dataslide
+        {
+            height: 500px;
+            width: 30%;
+            /* border: 1px solid black; */
+        
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="navbar"></div>
+
+    <div id="head-name">
+        <div id="head-name-box">
+        <p class="head-name-bar">0-24 MONTHS</p>
+        <p class="head-name-bar">3-8 YEARS</p>
+        <p class="head-name-bar">9-16 YEARS</p>
+        <p class="head-name-bar">COLLABORATIONS</p>
+        </div>
+    </div>
+
+    <div id="top-image">
+        <img src="https://www.yoox.com/images/yoox80/banners/6821_1_Ceremony_Main_K.jpg?634485886601286852&impolicy=cropDefault&width=720&height=510" alt="">
+        <div id="on-image">
+            <h2>LET'S PARTY!</h2>
+            <p>Festive looks for the littlest guests</p>
+            <div id="image-text">
+                <span class="on-img-ops1">SHOP GIRLS</span>
+                <span class="on-img-ops2">SHOP BOYS</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="slidebar">
+        <div id="dataslide">
+            <p id="dataslide-name">NEW ARRIVALS GIRLS</p>
+            <P id="dataslide-view">VIEW ALL</P>
+        </div>
+
+    <div class="slidingbox">
+        <div class="main-carousel">
+            <div class="cell">
+                <a href=""><img src="https://www.yoox.com/images/items/12/12788309HN_14_f.jpg?impolicy=crop&width=306&height=390" alt=""></a>
+                <p class="prod-name">VANS</p>
+                <P class="prod-type">Sweatshirt</P>
+                <p class="prod-price">US$ 92,00</p>
+            </div>
+            <div class="cell">
+                <a href=""><img src="https://www.yoox.com/images/items/13/13773489EL_14_f.jpg?impolicy=crop&width=306&height=390" alt=""></a>
+                <p class="prod-name">NAME IT</p>
+                <P class="prod-type">Denim pants</P>
+                <p class="prod-price">US$ 40,00</p>
+            </div>
+            <div class="cell">
+                <a href=""><img src="https://www.yoox.com/images/items/17/17239634NM_14_f.jpg?impolicy=crop&width=306&height=390" alt=""></a>
+                <p class="prod-name">GOLDEN GOOSE DELUXE BRAND</p>
+                <P class="prod-type">Sneakers</P>
+                <p class="prod-price">US$ 283,00</p>
+            </div>
+            <div class="cell">
+                <a href=""><img src="https://www.yoox.com/images/items/17/17243856JI_14_f.jpg?impolicy=crop&width=306&height=390" alt=""></a>
+                <p class="prod-name">THE MARC JACOBS</p>
+                <P class="prod-type">Sandals</P>
+                <p class="prod-price">US$ 126,00</p>
+            </div>
+            <div class="cell">
+                <a href=""><img src="https://www.yoox.com/images/items/16/16120939SP_14_f.jpg?impolicy=crop&width=306&height=390" alt=""></a>
+                <p class="prod-name">KIDS ONLY</p>
+                <P class="prod-type">Denim jacket</P>
+                <p class="prod-price">US$ 67,00</p>
+            </div>
+            <div class="cell">
+                <a href=""><img src="https://www.yoox.com/images/items/54/54183845NU_14_f.jpg?impolicy=crop&width=306&height=390" alt=""></a>
+                <p class="prod-name">NIKE</p>
+                <P class="prod-type">Athletic outfit</P>
+                <p class="prod-price">US$ 78,00</p>
+            </div>
+            <div class="cell">
+                <a href=""><img src="https://www.yoox.com/images/items/17/17244691FX_14_f.jpg?impolicy=crop&width=306&height=390" alt=""></a>
+                <p class="prod-name">VANS</p>
+                <P class="prod-type">Snekers</P>
+                <p class="prod-price">US$ 64,00</p>
+            </div>
+            <div class="cell">
+                <a href=""><img src="https://www.yoox.com/images/items/15/15203434KD_14_f.jpg?impolicy=crop&width=306&height=390" alt=""></a>
+                <p class="prod-name">BILLIEBLUSH</p>
+                <P class="prod-type">Dress</P>
+                <p class="prod-price">US$ 84,00</p>
+            </div>
+            <div class="cell">
+                <a href=""><img src="https://www.yoox.com/images/items/12/12789523WK_14_f.jpg?impolicy=crop&width=306&height=390" alt=""></a>
+                <p class="prod-name">MICHAEL MICHAEL KORS</p>
+                <P class="prod-type">T-shirt</P>
+                <p class="prod-price">US$ 64,00</p>
+            </div>
+          
+          </div>
+          </div>
+          </div>
+
+
+          <div id="slidebar">
+            <div id="dataslide">
+                <p id="dataslide-name">NEW ARRIVALS GIRLS</p>
+                <P id="dataslide-view">VIEW ALL</P>
+            </div>
+    
+        <div class="slidingbox">
+            <div class="main-carousel">
+                <div class="cell">
+                    <a href=""><img src="https://www.yoox.com/images/items/54/54183813RE_14_f.jpg?impolicy=crop&width=306&height=390" alt=""></a>
+                    <p class="prod-name">VANS</p>
+                    <P class="prod-type">Sweatshirt</P>
+                    <p class="prod-price">US$ 92,00</p>
+                </div>
+                <div class="cell">
+                    <a href=""><img src="https://www.yoox.com/images/items/17/17240953XE_14_f.jpg?impolicy=crop&width=306&height=390" alt=""></a>
+                    <p class="prod-name">NAME IT</p>
+                    <P class="prod-type">Denim pants</P>
+                    <p class="prod-price">US$ 40,00</p>
+                </div>
+                <div class="cell">
+                    <a href=""><img src="https://www.yoox.com/images/items/12/12789956EA_14_f.jpg?impolicy=crop&width=306&height=390" alt=""></a>
+                    <p class="prod-name">GOLDEN GOOSE DELUXE BRAND</p>
+                    <P class="prod-type">Sneakers</P>
+                    <p class="prod-price">US$ 283,00</p>
+                </div>
+                <div class="cell">
+                    <a href=""><img src="https://www.yoox.com/images/items/54/54184129AN_14_f.jpg?impolicy=crop&width=306&height=390" alt=""></a>
+                    <p class="prod-name">THE MARC JACOBS</p>
+                    <P class="prod-type">Sandals</P>
+                    <p class="prod-price">US$ 126,00</p>
+                </div>
+                <div class="cell">
+                    <a href=""><img src="https://www.yoox.com/images/items/17/17244656TG_14_f.jpg?impolicy=crop&width=306&height=390" alt=""></a>
+                    <p class="prod-name">KIDS ONLY</p>
+                    <P class="prod-type">Denim jacket</P>
+                    <p class="prod-price">US$ 67,00</p>
+                </div>
+                <div class="cell">
+                    <a href=""><img src="https://www.yoox.com/images/items/12/12789499HB_14_f.jpg?impolicy=crop&width=306&height=390" alt=""></a>
+                    <p class="prod-name">NIKE</p>
+                    <P class="prod-type">Athletic outfit</P>
+                    <p class="prod-price">US$ 78,00</p>
+                </div>
+                <div class="cell">
+                    <a href=""><img src="https://www.yoox.com/images/items/12/12793446WA_14_f.jpg?impolicy=crop&width=306&height=390" alt=""></a>
+                    <p class="prod-name">VANS</p>
+                    <P class="prod-type">Snekers</P>
+                    <p class="prod-price">US$ 64,00</p>
+                </div>
+                <div class="cell">
+                    <a href=""><img src="https://www.yoox.com/images/items/17/17245571BL_14_f.jpg?impolicy=crop&width=306&height=390" alt=""></a>
+                    <p class="prod-name">BILLIEBLUSH</p>
+                    <P class="prod-type">Dress</P>
+                    <p class="prod-price">US$ 84,00</p>
+                </div>
+                <div class="cell">
+                    <a href=""><img src="https://www.yoox.com/images/items/13/13773558MD_14_f.jpg?impolicy=crop&width=306&height=390" alt=""></a>
+                    <p class="prod-name">MICHAEL MICHAEL KORS</p>
+                    <P class="prod-type">T-shirt</P>
+                    <p class="prod-price">US$ 64,00</p>
+                </div>
+              
+              </div>
+              </div>
+              </div>
+
+    <p id="des-name">DESIGNERS</p>
+    <div id="des-opt">
+        <div id="des-opt1">GIRLS</div>
+        <div id="des-opt2">BOYS</div>
+    </div>
+    <div id="cat-select">
+        <div id="cat-div">
+            <p class="cat-div-head">BABY 0-24 MONTHS</p>
+            <h2 class="cat-div-ops">DOLCE & GABBANA</h2>
+            <h2 class="cat-div-ops">FENDI</h2>
+            <h2 class="cat-div-ops">IL GUFO</h2>
+            <h2 class="cat-div-ops">MARNI</h2>
+            <h2 class="cat-div-ops">SIMONETTA</h2>
+            <h2 class="cat-div-ops">DSQUARED2</h2>
+            <h2 class="cat-div-ops">GUCCI</h2>
+            <h2 class="cat-div-ops">MONCLER</h2>
+            <p class="cat-div-view">VIEW ALL</p>
+        </div>
+        <div id="cat-div">
+            <p class="cat-div-head">KIDS 3-8 YEARS</p>
+            <h2 class="cat-div-ops">DOLCE & GABBANA</h2>
+            <h2 class="cat-div-ops">MSGM</h2>
+            <h2 class="cat-div-ops">RALPH LAUREN</h2>
+            <h2 class="cat-div-ops">IL GUFO</h2>
+            <h2 class="cat-div-ops">ROBERTO CAVALLI</h2>
+            <h2 class="cat-div-ops">MARNI</h2>
+            <h2 class="cat-div-ops">MONCLER</h2>
+            <h2 class="cat-div-ops">FENDI</h2>
+            <p class="cat-div-view">VIEW ALL</p>
+        </div>
+        <div id="cat-div">
+            <p class="cat-div-head">JUNIOR 9-16 YEARS</p>
+            <h2 class="cat-div-ops">DOLCE & GABBANA</h2>
+            <h2 class="cat-div-ops">MARNI</h2>
+            <h2 class="cat-div-ops">KARL LAGERFELD</h2>
+            <h2 class="cat-div-ops">RALPH LAUREN</h2>
+            <h2 class="cat-div-ops">BURBERRY</h2>
+            <h2 class="cat-div-ops">DSQUARED2</h2>
+            <h2 class="cat-div-ops">MICHAEL KORS</h2>
+            <h2 class="cat-div-ops">KENZO</h2>
+            <p class="cat-div-view">VIEW ALL</p>
+        </div>
+    </div>
+
+
+    <div id="main-divbox">
+        <div class="image-info">
+            <img src="https://www.yoox.com/images/yoox80/banners/6821_5_IlGufo_Tris_K.jpg?634485886601286852#width=387&height=540" alt="">
+            <div id="below-image">
+                <h2>IL GUFO</h2>
+                <p>Outdoor adventures</p>
+                <div id="image-text">
+                    <span class="on-img-ops1">SHOP GIRLS</span>
+                    <span class="on-img-ops2">SHOP BOYS</span>
+                </div>
+            </div>
+        </div>
+        <div class="image-info">
+            <img src="https://www.yoox.com/images/yoox80/banners/6821_2_DolceGabbana_Tris_K.jpg?634485886601286852#width=430&height=600" alt="">
+            <div id="below-image">
+                <h2>DOLCE & GABBANA</h2>
+                <p>Fun fashion for the little ones</p>
+                <div id="image-text">
+                    <span class="on-img-ops1">SHOP GIRLS</span>
+                    <span class="on-img-ops2">SHOP BOYS</span>
+                </div>
+            </div>
+        </div>
+        <div class="image-info">
+            <img src="https://www.yoox.com/images/yoox80/banners/6821_5_StellaMcKids_Tris_K.jpg?634485886601286852#width=387&height=540" alt="">
+            <div id="below-image">
+                <h2>STELLA MCCARTNEY KIDS</h2>
+                <p>Come play with us!</p>
+                <div id="image-text">
+                    <span class="on-img-ops1">SHOP GIRLS</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<div id="two-div">
+    <div id="div-divname">
+        <p id="two-divname">RECENTLY VIEWED</p>
+    </div>
+    <div id="two-div1">
+        <img src="https://www.yoox.com/images/items/15/15203434KD_14_f.jpg?impolicy=crop&width=306&height=390" alt="">
+        <p class="prod-name">BILLIEBLUSH</p>
+        <P class="prod-type">Dress</P>
+        <p class="prod-price">US$ 84,00</p>
+    </div>
+    <div id="two-div2">
+        <img src="https://www.yoox.com/images/items/12/12789523WK_14_f.jpg?impolicy=crop&width=306&height=390" alt="">
+        <p class="prod-name">MICHAEL MICHAEL KORS</p>
+        <P class="prod-type">T-shirt</P>
+        <p class="prod-price">US$ 64,00</p>
+    </div>
+</div>
+
+
+    <div id="top-image1">
+        <img src="https://www.yoox.com/images/yoox80/banners/6821_1_Spring_Main_K.jpg?634485886601286852&impolicy=cropDefault&width=720&height=510" alt="">
+        <div id="on-image">
+            <h2>SPRING HAS SPRUNG!</h2>
+            <p>Find the season's must-haves here</p>
+            <div id="image-text">
+                <span class="on-img-ops1">SHOP GIRLS</span>
+                <span class="on-img-ops2">SHOP BOYS</span>
+            </div>
+        </div>
+    </div>
+
+
+          <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+          <script type="text/javascript">
+          $('.main-carousel').flickity({
+              // options
+              cellAlign: 'left',
+              wrapAround: true,
+              freeScroll: true,
+              groupCells: true
+              
+            });
+          </script>
+</body>
+</html>
+<script src="./scripts/index.js" type="module"></script>

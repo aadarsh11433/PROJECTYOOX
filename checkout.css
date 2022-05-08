@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,700&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+#head1
+{
+    font-family: 'Montserrat', sans-serif;
+    margin-left:46.5%;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 22px;
+ 
+    
+   
+}
+#div1
+{
+    height:80px;
+     width:980px;
+     border: 1px solid black;
+     border-bottom: 5px solid #f3f3f3;
+     margin-left :19%;
+     display: flex;
+     justify-content: space-between;
+     font-family: 'Montserrat', sans-serif;;
+
+
+}
+ #idiv1{
+    border:1px solid black;
+    width:299px;
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    background-color: #333333;
+    color:white
+
+} 
+#div1>p{
+    margin-top: 20px;
+    font-size: 13px;
+    font-family: 600;
+}
+#head2{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left :19%;
+
+
+}
+#div2{
+    width:980px;
+    height:270px;
+    /* border:1px solid black; */
+    margin-left :19%;
+    display: flex;
+    justify-content: space-between;
+  
+}
+#idiv21{
+    width:70%;
+    height:100%;
+    /* display: flex; */
+    /* border:1px  solid black; */
+
+}
+#iidiv{
+    width:100%;
+    height:50%;
+    /* border:1px solid black; */
+    display:flex;
+    padding: 15px;
+    box-sizing: border-box;
+
+}
+#idiv22{
+    width:40%;
+    height:100%;
+    /* border: 1px solid black; */
+
+}
+#span1{
+    margin-top:20px !important;
+}
+#ip1{
+    margin-left: 60px;
+    
+}
+#color
+{
+  margin-left: auto;
+}
+#plus
+{
+    height: 19px;
+    width:78px;
+    /* border:1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    background-color:#ECECEC;
+    border-radius: 20%;
+    /* align-items: center; */
+    font-size: 22px;
+    font-size: 20px;
+}
+#remove
+{
+   display:flex; 
+   height:30px;
+   width:90px;
+   /* border:1px solid black; */
+   margin-top:30Px;
+   margin-left: -80px;
+
+}
+#dream{
+   margin-top:52px;
+   margin-left:-90px;
+   display:flex;
+}
+#dream>p{
+    margin-left: 10px;
+    font-size:12px;
+}
+#price
+{
+    height:80px;
+    width:120px;
+    /* border:1px solid black; */
+    line-height: 6px;
+}
+#gift
+{
+    width:980px;
+    height:66px;
+    /* border:1px solid black; */
+    margin-left: 19%;
+    display: flex;
+    align-items: center;
+    background-color: #F3F3F3;
+}
+.larger{
+    
+
+    width:20px;
+    height:20px;
+    margin-left: 20px;
+    
+}
+#gift>h3{
+    margin-left: 20px;
+    margin-top: 19px;
+}
+#discount
+{
+    width:980px;
+    height:66px;
+    display: flex;
+    /* border:1px solid black; */
+    margin-left: 19% ; 
+    margin-top:35px; 
+    align-items: center;
+    /* text-align: center; */
+    background-color: #fff394;
+    padding-left: 30%;
+    box-sizing: border-box;
+}
+#border
+{
+    width:980px;
+    height:20px;
+    border-bottom:5px solid #f3f3f3;
+    margin-left: 19%;
+}
+#logo222
+{
+    height:92px;
+    width:500px;
+    border:1px solid black;
+    margin-left: 19%;;
+    display: flex;
+ justify-content: space-between;
+ padding: 10px;
+}
+#img3
+{
+height:80px;
+margin-top:10px;
+}
+#yooxcode
+{
+height:70px;
+width:980px;
+/* border: 1px solid black; */
+margin-left: 19%;
+margin-top:28px;
+display: flex;
+justify-content: space-between;
+padding:25px;
+box-sizing: border-box;
+}
+#pay
+{
+    margin-left: 19%;
+    /* border: 1px solid black; */
+    margin-top: 50px;
+    width: 980px;
+}
+.pay1{
+   /* border: 1px solid black; */
+   height:70px;
+   width:980px;
+   display: flex;
+   justify-content: space-between;
+   padding-top: 8px; 
+   box-sizing: border-box;
+}
+#pay2
+{
+    height:85px;
+    width:980px;
+    display: flex;
+    border-bottom: 2px solid teal;
+    border-top: 1px solid teal;
+    justify-content: space-between;
+    padding-top:12px;
+    box-sizing: border-box;
+
+}
+#bottom22
+{
+    height: 60px;
+    width:968px;
+    margin-left: 19.2%;
+    border: 1px solid black;
+    overflow: auto;
+    font-size: 13px;
+}
+#bottom
+{
+    background-color: 
+    #333333;
+    height:110px;
+    width:100%;
+    padding-top: 40px;
+    margin-top: 10px;
+}#bottom>p{
+    text-align: center;
+    font-size: 12px;
+    color:white;
+}
+.img1{
+    height:80px;
+    width:80px;
+}
+
+  
+  
