@@ -2,11 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@700&family=PT+Sans&display=swap');
 body{
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
-#today{
+#today,#previous{
     display: grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(4,1fr);
 
     justify-content: center;
-    
+    padding: 10px;
+
 }
+#today  img,#previous img {
+    width: 50%;
+}
+

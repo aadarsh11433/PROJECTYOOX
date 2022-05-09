@@ -11,10 +11,10 @@ import { recentDetailedProduct } from "./moveToDiv.js"
 let today = new Date()
 let TodayDate = today.getDate()
 let currentMonth = today.getMonth()+1
-let todayName = document.createElement("h2")
-    let previousName = document.createElement("h2")
-    document.getElementById("today").append(todayName)
-    document.getElementById("previous").append(previousName)
+let todayName = document.getElementById("todaysve")
+    let previousName = document.getElementById("preve")
+    // document.getElementById("today").append(todayName)
+    // document.getElementById("previous").append(previousName)
 data.forEach(({name,category,img,price,off,finalPrice,date,month})=>{
     
     
