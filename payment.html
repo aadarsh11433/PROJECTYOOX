@@ -231,7 +231,7 @@
                     Consult our <u>Privacy Policy</u> for more information about your rights.
                     Consult our <u>General Terms and Conditions of Sale.</u>
                 </p>
-                <button class="b1">PAY NOW</button>
+                <button class="bbb b1">PAY NOW</button>
             </div><br>
 
             <div>
@@ -315,4 +315,10 @@ let productsinbag = JSON.parse(localStorage.getItem("addToCart"))
  let email = JSON.parse(localStorage.getItem("loginUsr"))
    
  document.querySelector(".emailfromlogin").innerText = `You are ordering as ${email}`
+
+
+ document.querySelector(".bbb").addEventListener("click",()=>{
+     alert("payment successfull")
+     window.location.href ="index.html";
+ })
 </script>
