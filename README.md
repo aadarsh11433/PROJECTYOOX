@@ -14,20 +14,33 @@ Deployed link of Netlify : https://yooox.netlify.app
 
  ## Team Members
 
-- [Aadarsh Mukati](https://github.com/aadarsh11433) 
+### Aadarsh Mukati :
+- [Github](https://github.com/aadarsh11433) 
+- [blog Link]()
 
-- [Akshay Boraste](https://github.com/akbora1994)
+### Akshay Boraste :
+- [Github](https://github.com/akbora1994)
 -  [blog Link](https://medium.com/@akshayboraste778/e87b94ad701c)
 
-- [Altaf Ali baig](https://github.com/altaf100001)
+### Altaf Ali baig :
+- [Github](https://github.com/altaf100001)
+- [blog Link]()
 
-- [Pardeep Sharma](https://github.com/shadow3012) 
+### Pardeep Sharma :
+- [Github](https://github.com/shadow3012) 
+- [blog Link]()
 
-- [Rohit Gupta](https://github.com/Rohit9894)
+### Rohit Gupta :
+- [Github](https://github.com/Rohit9894)
+- [blog Link]()
 
-- [Sumeet More](https://github.com/sumeetmore1997)
+### Sumeet More :
+- [Githube](https://github.com/sumeetmore1997)
+- [blog Link]()
 
-- [Vishakha Jangam](https://github.com/Vishakha-Jangam)
+### Vishakha Jangam :
+- [Github](https://github.com/Vishakha-Jangam)
+- [blog Link]()
 
 
  ## Tech Stack:
