@@ -1,5 +1,5 @@
 function appendContent(x,y,z,i){
-     let recentData = {x,y}
+     let recentData = x
     let tar1 = document.getElementById(x)
     let tar2 = document.getElementById(y)
     for(let a = 0;a<z;a++){
@@ -16,7 +16,9 @@ function appendContent(x,y,z,i){
     }
  
   let recentClick = JSON.parse(localStorage.getItem("recent_click"))
-  if(recentClick.x==x){
+  
+  
+  if(recentClick==x){
       tar1.style.backgroundColor="#333333"
       tar1.style.color="white"
       tar2.style.display = "none"

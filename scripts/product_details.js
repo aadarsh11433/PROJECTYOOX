@@ -84,7 +84,7 @@ document.getElementById("topright").append(addToBag,br,addToDream)
 
 
 import { appendRecent } from "./moveToDiv.js"
-appendRecent("recentView")
+appendRecent("recentViewed")
 
 
 
