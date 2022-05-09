@@ -220,6 +220,7 @@
  #custo-box{
     background-color: white;
     width: 60%;
+    display: none;
     /* position: fixed; */
  }
  .form-popup{

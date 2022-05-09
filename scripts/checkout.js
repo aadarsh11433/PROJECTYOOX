@@ -1,5 +1,22 @@
 import {navbar} from "../component/navbar1.js"
+
+
+import {openForm, closeForm,checkLogin ,closecc,opencc} from "../component/navbar1.js";
+
+
 document.querySelector("#navbar").innerHTML=navbar();
+closecc();
+
+document.getElementById("open").addEventListener("click",openForm);
+document.getElementById("custc").addEventListener("click",opencc);
+document.querySelector("#login").addEventListener("click",checkLogin);
+document.getElementById("close").addEventListener("click",closeForm);
+document.getElementById("ccclose").addEventListener("click",closecc);
+
+
+
+
+
 
 
 let checkout11=    JSON.parse(localStorage.getItem("addToCart")) ||[];
@@ -166,6 +183,7 @@ function removefrombag(index){
     localStorage.setItem("addToCart",JSON.stringify(checkout11));
     append12(checkout11)
     document.getElementById("itemcount").innerText =checkout11.length;
+    total()
     document.getElementById("amounttopay").innerText =`US$${26+(+localStorage.getItem("totalamount"))}`
 }
 
@@ -176,7 +194,7 @@ function movetodream(data,index){
     localStorage.setItem("addToCart",JSON.stringify(checkout11));
     append12(checkout11)
     document.getElementById("itemcount").innerText =checkout11.length;
-
+total()
     document.getElementById("amounttopay").innerText =`US$${26+(+localStorage.getItem("totalamount"))}`
 }
 document.getElementById("itemcount").innerText =checkout11.length;
