@@ -29,7 +29,7 @@ Deployed link of Netlify : https://yooox.netlify.app
 - [Vishakha Jangam](https://github.com/Vishakha-Jangam)
 
 
- ## 3 Tech Stack:
+ ## Tech Stack:
 - HTML
 
 - CSS/Bootstrap
