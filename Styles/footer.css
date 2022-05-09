@@ -11,6 +11,7 @@
 #big{
     display: flex;
     margin:20px 184.5px;
+    justify-content: center;
     /* margin-top: 20px; */
     gap:15px;
 

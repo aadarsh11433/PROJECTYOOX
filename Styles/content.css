@@ -32,6 +32,7 @@ a{
     
 }
 
+
 .showcontent{
     height: 500px;
     background-color: khaki;
@@ -40,10 +41,7 @@ pointer-events: none;
 
    
 }
-.hidecontent{
-    display: block;
-    pointer-events: visible;
-}
+
 
 #content p{
     font-size: 14px;
@@ -80,7 +78,9 @@ pointer-events: none;
 
 }
 .leftDiv{
-    width: 180px;
+
+    width: 240px;
+
     background-color: #f3f3f3;
     cursor: pointer;
     padding: 10px;
@@ -90,9 +90,12 @@ pointer-events: none;
     }
     .rightDiv{
         display: flex;
-        width: 60%;
+
+        
     }
     .mainDiv{
+        display: flex;
+
         width: 100%;
         justify-content: center;
         display: flex;
