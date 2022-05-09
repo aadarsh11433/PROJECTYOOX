@@ -69,8 +69,9 @@ function navbar() {
    <h4><a href="men.html">MEN</a></h4>
    <h4><a href="kids.html">KIDS</a></h4>
    <h4>/</h4>
-   <h4><a href="design
-   .html">DESIGN+ART</a></h4>
+
+   <h4><a href="designart.html">DESIGN+ART</a></h4>
+
    </div>
    
    <h2 id="logo"><a href="index.html"><img src="logo.jpg" alt="" id="logoo"></a></h2>

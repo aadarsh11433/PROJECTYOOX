@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Payment</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@700&family=PT+Sans&display=swap');
 
@@ -135,7 +135,7 @@
                     <h2>Email</h2>
                     <p>MODIFY</p>
                 </div>
-                <p>You are ordering as emailid from local storage</p>
+                <p class="emailfromlogin"></p>
             </div><br>
 
             <div id="left2">
@@ -231,7 +231,7 @@
                     Consult our <u>Privacy Policy</u> for more information about your rights.
                     Consult our <u>General Terms and Conditions of Sale.</u>
                 </p>
-                <button class="b1">PAY NOW</button>
+                <button class="bbb b1">PAY NOW</button>
             </div><br>
 
             <div>
@@ -243,9 +243,9 @@
 
             <div id="payment_details">
                 <h1>Your Order</h1>
-                <p>no. of items</p>
+                <p class="no_items"></p>
                 <h4>TOTAL FOR ITEMS</h4>
-                <p>price from local storage</p>
+                <p class="totalprice">price from local storage</p>
 
                 <h4>SHIPPING</h4>
                 <p>Standard- 12 -15 bussiness days </p>
@@ -255,18 +255,18 @@
                 <p>Free Credit Card</p>
 
                 <h4>SALES TAX</h4>
-                <P>$150.85</P>
+                <P>US$ 26.00</P>
             </div>
         </div>
     </div>
 
-    <div id="icons">
+    <!-- <div id="icons">
         <p>SECURE CHECKOUT</p>
         <img src="" alt="">
         <img src="" alt="">
         <img src="" alt="">
         <img src="" alt="">
-    </div>
+    </div> -->
 
     <div id="FAQS">
         <h1>Frequently Asked Questions</h1>
@@ -300,3 +300,25 @@
 </body>
 
 </html>
+
+<script>
+
+let productsinbag = JSON.parse(localStorage.getItem("addToCart"))
+
+ document.querySelector(".no_items").innerText = ` Items in your bag  ${productsinbag.length}`;
+
+
+ let amount = JSON.parse(localStorage.getItem("totalamount"))
+
+ document.querySelector(".totalprice").innerText = ` total price US$ ${amount}`;
+
+ let email = JSON.parse(localStorage.getItem("loginUsr"))
+   
+ document.querySelector(".emailfromlogin").innerText = `You are ordering as ${email}`
+
+
+ document.querySelector(".bbb").addEventListener("click",()=>{
+     alert("payment successfull")
+     window.location.href ="index.html";
+ })
+</script>

@@ -1,4 +1,5 @@
 let details = JSON.parse(localStorage.getItem("mens_data"))
+
 import {contentList} from "/./scripts/content.js"
 var menContentList = ["NEW ARRIVALS","DESIGNERS","CLOTHING","SHOES","ACCESSORIES","8 BY YOOX",]
 var menContentIDList = ["menNewArrivals","menDesigners","menClothing","menShoes","menAccessories","men8ByNoox",]
@@ -9,6 +10,7 @@ contentList("content",menContentList,menContentIDList,menFunctions,6)
 import { moveToDiv } from "/./scripts/moveToDiv.js"
 let access = [details.menAccessories[1],details.menAccessories[8],details.menAccessories[16]]
 moveToDiv(access,"8byYooxContent",3)
+
 
 
 moveToDiv(details.mens_new_arrivals,"ContentDivRight1",4)

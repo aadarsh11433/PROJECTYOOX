@@ -67,17 +67,18 @@ margin: auto;
 margin-left: 19%;
 }
 #container >div {
-border: 1px solid;
-background-color: pink;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 display: flex;
+margin: 5px;
 height: 200px;
 justify-content: space-around;
+align-items: center;
 
 }
 .boxone{
     display: flex;
-    width: 40%;
-    border: 1px solid;
+    width: 35%;
+    /* border: 1px solid; */
     padding: 5px;
     gap: 10px;
     height: 90%;
@@ -89,23 +90,53 @@ justify-content: space-around;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    border: 1px solid;
-
+    /* border: 1px solid; */
+    height: 70%;
+    width: 35%;
 }
 .boxtwo input{
     width: 25%;
-    background-color: rgb(206, 194, 194);
-    border: none;
+    background-color: rgb(239, 226, 226);
+    border-style: none;
     border-radius: 10px;
+    padding-left: 10%;
 }
 .boxtwo >div:first-child{
     width: 50%;
     /* margin:auto; */
         margin-left: 20%;
-    border: 1px solid;
 }
-
-
+.boxtwo >div:nth-child(2)
+{
+  /* border: 1px solid; */
+  width: 30%;
+  background-color: rgb(237, 171, 125);
+  border-radius: 5px;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.boxtwo >div:nth-child(3){
+    background-color: rgb(237, 171, 125);
+  border-radius: 5px;
+  padding: 5px 10px;
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+.boxthree{
+    /* border: 1px solid; */
+    height: 70% ;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 25;
+}
+.boxthree >p:first-child{
+    text-decoration: line-through;
+}
 #idiv21{
     width:70%;
     height:100%;

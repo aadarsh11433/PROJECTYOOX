@@ -32,6 +32,9 @@ function showdreamdata(dreamboxarr){
       let statrtdreaming = create("button")
       statrtdreaming.innerText = "START DREAMING"
       statrtdreaming.setAttribute("class","starbutton")
+      statrtdreaming.addEventListener("click",()=>{
+          window.location.href = "men.html"
+      })
       document.getElementById("dreamcontent").append(gifimg,heading,para,statrtdreaming)
 
     }
@@ -58,8 +61,10 @@ console.log(category,name,price,finalPrice,img,off,color,index)
      image.src =  img;
      brand.innerText = name;
      cat.innerText =category;      
-     fprice.innerText =  finalPrice;
+     fprice.innerText =  `US$${finalPrice}`;
      pr.innerText = `$${price}`
+     pr.style.textDecoration = "line-through"
+     pr.style.color ='gray'
       offf.innerText = ` ${off} Off`;
        offdiv.append(pr,offf)
        cross.innerText ="X"
@@ -69,6 +74,7 @@ console.log(category,name,price,finalPrice,img,off,color,index)
 
       let bagbtn =create("button")
       bagbtn.innerText = "ADD TO SHOPPING BAG"
+      bagbtn.setAttribute("class","bagbtn")
 
       bagbtn.addEventListener("click",()=>{
            

@@ -1,5 +1,22 @@
 import {navbar} from "../component/navbar1.js"
+
+
+import {openForm, closeForm,checkLogin ,closecc,opencc} from "../component/navbar1.js";
+
+
 document.querySelector("#navbar").innerHTML=navbar();
+closecc();
+
+document.getElementById("open").addEventListener("click",openForm);
+document.getElementById("custc").addEventListener("click",opencc);
+document.querySelector("#login").addEventListener("click",checkLogin);
+document.getElementById("close").addEventListener("click",closeForm);
+document.getElementById("ccclose").addEventListener("click",closecc);
+
+
+
+
+
 
 
 let checkout11=    JSON.parse(localStorage.getItem("addToCart")) ||[];
@@ -93,6 +110,8 @@ function append12(checkout11)
         // sum = sum + (+(fpri.innerText))
         total()
 
+        document.getElementById("amounttopay").innerText =`US$${26+(+localStorage.getItem("totalamount"))}`
+
        })
   
        minus.addEventListener("click",()=>{
@@ -102,6 +121,8 @@ function append12(checkout11)
           fpri.innerText = `US$${finalPrice *(+(input.value))}`
 
           total()
+
+          document.getElementById("amounttopay").innerText =`US$${26+(+localStorage.getItem("totalamount"))}`
         }
          })
 
@@ -112,7 +133,7 @@ function append12(checkout11)
          pri.innerText =  `US$${price* (+(input.value))}`
          fpri.innerText =  `US$${finalPrice *(+(input.value))}`
          total()
-       
+         document.getElementById("amounttopay").innerText =`US$${26+(+localStorage.getItem("totalamount"))}`
      })
      dis.innerText =off
 
@@ -161,6 +182,9 @@ function removefrombag(index){
     checkout11.splice(index,1);
     localStorage.setItem("addToCart",JSON.stringify(checkout11));
     append12(checkout11)
+    document.getElementById("itemcount").innerText =checkout11.length;
+    total()
+    document.getElementById("amounttopay").innerText =`US$${26+(+localStorage.getItem("totalamount"))}`
 }
 
 function movetodream(data,index){
@@ -169,4 +193,22 @@ function movetodream(data,index){
     checkout11.splice(index,1);
     localStorage.setItem("addToCart",JSON.stringify(checkout11));
     append12(checkout11)
+    document.getElementById("itemcount").innerText =checkout11.length;
+total()
+    document.getElementById("amounttopay").innerText =`US$${26+(+localStorage.getItem("totalamount"))}`
 }
+document.getElementById("itemcount").innerText =checkout11.length;
+
+
+
+document.getElementById("idiv1").addEventListener("click",()=>{
+    window.location.href = "payment.html"
+
+})
+
+document.querySelector(".placeorderbutton").addEventListener("click",()=>{
+    window.location.href = "payment.html"
+    
+})
+
+document.getElementById("amounttopay").innerText =`US$${26+(+localStorage.getItem("totalamount"))}`

@@ -1,5 +1,29 @@
 let men_data = JSON.parse(localStorage.getItem("mens_data"))||[]
 
+
+import {navbar ,openForm, closeForm,checkLogin ,closecc,opencc} from "../component/navbar1.js";
+document.getElementById("navbar").innerHTML = navbar()  
+
+//    window.addEventListener("load",closecc) ;
+
+   closecc()
+
+
+document.getElementById("open").addEventListener("click",openForm);
+document.getElementById("custc").addEventListener("click",opencc);
+document.querySelector("#login").addEventListener("click",checkLogin);
+document.getElementById("close").addEventListener("click",closeForm);
+document.getElementById("ccclose").addEventListener("click",closecc);
+
+
+
+
+
+
+
+
+
+
 import { moveToDiv,appendRecent } from "./moveToDiv.js"
 appendRecent("recentView")
 moveToDiv(men_data.mens_new_arrivals,"new_arrivals")
@@ -8,6 +32,7 @@ document.getElementById("footer").innerHTML=footer()
 
 moveToDiv(men_data.OOAK,"OOAK")
 import { redirect } from "./redirect.js"
+
 import {navbar ,openForm, closeForm,checkLogin ,closecc,opencc} from "../component/navbar1.js";
 document.getElementById("navbar").innerHTML = navbar()  
 
@@ -26,18 +51,5 @@ let slider = document.querySelectorAll(".slider")
 let slidePrice = document.querySelectorAll(".slider>h")
 
 let accessCat = ['Sunglasses', 'Wrist watches', 'Wallets']
-let accessDes = ['GCDS', 'TOM FORD', 'GUCCI', 'ALEXANDER MCQUEEN', 'PARAFINA', 'PHILIPP PLEIN', 'BAUME & MERCIER', 'MICHAEL KORS', 'DOLCE & GABBANA', 'MAISON MARGIELA', 'PAUL SMITH', 'MONTBLANC']
-for(let x = 0;x<accessories.length;x++){
-        
-       if(accessCat.includes(accessories[x].category)){
-               continue
-       }
-       else{
-               accessCat.push(accessories[x].category)
-       }
-}
-
-
-console.log(accessCat)
 
 

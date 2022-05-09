@@ -90,9 +90,9 @@ let productarr = [
     {
         img:"https://www.yoox.com/images/items/15/15183344AK_14_f.jpg?impolicy=crop&width=387&height=490",
         name:"CHLOÉ",category:"Modest fashion",
-        price:"2,750.00",
+        price:2750,
         off:"46% OFF",
-        finalPrice:"1,458.00",
+        finalPrice:1458,
         hoverimg:"https://www.yoox.com/images/items/15/15183344AK_14_r.jpg?impolicy=crop&width=387&height=490"    
     },
    ];
@@ -145,7 +145,7 @@ var menContentIDList = ["newarrivals","designersdiv","clothing","shoes","Accesso
 import {WnFunctions} from "./wnfun.js"
 
 // for contentList(id of black strip,array of innerText of LI,array of idname for li,array of functions of innerdiv,number of elements in array)
-// contentList("content",menContentList,menContentIDList,WnFunctions,9)
+contentList("content",menContentList,menContentIDList,WnFunctions,9)
 
 
 
@@ -166,7 +166,7 @@ import {WnFunctions} from "./wnfun.js"
 //    import {navbar} from "../component/navbar1.js"
     // import {footer} from  "../component/footer1.js"
 //    document.getElementById("navbar").innerHTML = navbar()
-//    document.getElementById("footer").innerHTML = footer()
+   document.getElementById("filters").innerHTML = filteroptions()
      
 function create (a)
 {
@@ -177,7 +177,7 @@ function create (a)
    }
 
 //    read("filters").innerHTML =filteroptions();
-   appendRecent("recentproducts")
+   appendRecent("recentView")
   
   appendata(productarr,read("products"))
   appendata(newarrivalsarr,read("products_in_newarrivals"))

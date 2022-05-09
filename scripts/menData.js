@@ -563,4 +563,5 @@ let men8ByYoox = [{name:"8 by YOOX COTTON TIE & DYE PRINTED OVERSIZE TRENCH",cat
 let menData = {mens_new_arrivals,OOAK,mensGloves,menHairAccessories,menHats,menShirts,menPants,menTshirts,menShoes,menAccessories}
 
 
+
 localStorage.setItem("mens_data",JSON.stringify(menData))
