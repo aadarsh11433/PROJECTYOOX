@@ -190,4 +190,4 @@ function recentDetailedProduct(data){
     localStorage.setItem("detailed_product",JSON.stringify(data))
 }
 
-export {moveToDiv,appendRecent,recentDetailedProduct}
+export {moveToDiv,appendRecent,recentDetailedProduct ,moveTo}

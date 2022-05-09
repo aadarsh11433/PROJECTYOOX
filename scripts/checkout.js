@@ -93,6 +93,8 @@ function append12(checkout11)
         // sum = sum + (+(fpri.innerText))
         total()
 
+        document.getElementById("amounttopay").innerText =`US$${26+(+localStorage.getItem("totalamount"))}`
+
        })
   
        minus.addEventListener("click",()=>{
@@ -102,6 +104,8 @@ function append12(checkout11)
           fpri.innerText = `US$${finalPrice *(+(input.value))}`
 
           total()
+
+          document.getElementById("amounttopay").innerText =`US$${26+(+localStorage.getItem("totalamount"))}`
         }
          })
 
@@ -112,7 +116,7 @@ function append12(checkout11)
          pri.innerText =  `US$${price* (+(input.value))}`
          fpri.innerText =  `US$${finalPrice *(+(input.value))}`
          total()
-       
+         document.getElementById("amounttopay").innerText =`US$${26+(+localStorage.getItem("totalamount"))}`
      })
      dis.innerText =off
 
@@ -161,6 +165,8 @@ function removefrombag(index){
     checkout11.splice(index,1);
     localStorage.setItem("addToCart",JSON.stringify(checkout11));
     append12(checkout11)
+    document.getElementById("itemcount").innerText =checkout11.length;
+    document.getElementById("amounttopay").innerText =`US$${26+(+localStorage.getItem("totalamount"))}`
 }
 
 function movetodream(data,index){
@@ -169,4 +175,22 @@ function movetodream(data,index){
     checkout11.splice(index,1);
     localStorage.setItem("addToCart",JSON.stringify(checkout11));
     append12(checkout11)
+    document.getElementById("itemcount").innerText =checkout11.length;
+
+    document.getElementById("amounttopay").innerText =`US$${26+(+localStorage.getItem("totalamount"))}`
 }
+document.getElementById("itemcount").innerText =checkout11.length;
+
+
+
+document.getElementById("idiv1").addEventListener("click",()=>{
+    window.location.href = "payment.html"
+
+})
+
+document.querySelector(".placeorderbutton").addEventListener("click",()=>{
+    window.location.href = "payment.html"
+    
+})
+
+document.getElementById("amounttopay").innerText =`US$${26+(+localStorage.getItem("totalamount"))}`

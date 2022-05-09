@@ -90,9 +90,9 @@ let productarr = [
     {
         img:"https://www.yoox.com/images/items/15/15183344AK_14_f.jpg?impolicy=crop&width=387&height=490",
         name:"CHLOÉ",category:"Modest fashion",
-        price:"2,750.00",
+        price:2750,
         off:"46% OFF",
-        finalPrice:"1,458.00",
+        finalPrice:1458,
         hoverimg:"https://www.yoox.com/images/items/15/15183344AK_14_r.jpg?impolicy=crop&width=387&height=490"    
     },
    ];
