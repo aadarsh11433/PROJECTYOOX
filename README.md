@@ -17,6 +17,7 @@ Deployed link of Netlify : https://yooox.netlify.app
 - [Aadarsh Mukati](https://github.com/aadarsh11433) 
 
 - [Akshay Boraste](https://github.com/akbora1994)
+-  [blog Link](https://medium.com/@akshayboraste778/e87b94ad701c)
 
 - [Altaf Ali baig](https://github.com/altaf100001)
 
