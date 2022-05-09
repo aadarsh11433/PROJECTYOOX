@@ -8,6 +8,7 @@
     background-color: white;
     min-height: 400px;
     gap: 20px;
+    padding: 10px;
 }
 #shopweekend{
    
@@ -21,7 +22,7 @@
     width: 100%;
 }
 #dreamcontent >div{
-  
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     text-align: center;
 
 }
@@ -47,6 +48,7 @@
   font-size: 20px;
   margin:5% 90%;
   background-color: white;
+  cursor: pointer;
 }
 .gifimg{
     margin-left: 40%;
@@ -62,5 +64,12 @@
     color: white;
     background-color: black;
     padding: 10px;
+    cursor: pointer;
+}
+.bagbtn{
+    background-color: black;
+    color: white;
+    margin: 5px;
+    padding: 5px 10px;
     cursor: pointer;
 }
