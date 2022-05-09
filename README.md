@@ -40,7 +40,7 @@ Deployed link of Netlify : https://yooox.netlify.app
 
 ### Vishakha Jangam :
 - [Github](https://github.com/Vishakha-Jangam)
-- [blog Link]()
+- [blog Link](https://medium.com/@vishakhavjangam/my-first-team-project-at-masai-school-bigbasket-clone-7a60c221b528)
 
 
  ## Tech Stack:
