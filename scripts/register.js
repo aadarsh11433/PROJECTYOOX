@@ -2,8 +2,8 @@
 import {navbar ,openForm, closeForm,checkLogin ,closecc,opencc} from "../component/navbar1.js";
 
 document.getElementById("navbar").innerHTML= navbar();
-
 closecc();
+
 
 
     let but1 = document.getElementById("google");
