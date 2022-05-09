@@ -84,11 +84,11 @@ document.getElementById("topright").append(addToBag,br,addToDream)
 
 
 import { appendRecent } from "./moveToDiv.js"
-appendRecent("recentViewed")
+appendRecent("recentView")
 
 
 
 
 
-import footer from "../component/footer1.js"
-document.getElementById("footer").innerHTML=footer();
+// import footer from "../component/footer1.js"
+// document.getElementById("footer").innerHTML=footer();
