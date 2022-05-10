@@ -28,7 +28,7 @@ Deployed link of Netlify : https://yooox.netlify.app
 
 ### Pardeep Sharma :
 - [Github](https://github.com/shadow3012) 
-- [blog Link]()
+- [blog Link](https://medium.com/@pardeep.sharma14195/yoox-clone-project-597e7354ec25)
 
 ### Rohit Gupta :
 - [Github](https://github.com/Rohit9894)
@@ -66,7 +66,7 @@ Kids page's design and finctionality done by **Sumeet**
 
 Design and Arts page's design and finctionality done by **Altaf**
 
-Products add to cart button is designed, and functioned along with JS functions by **Pardeep**.
+Men Page,product detailed page and recentview page is designed, and functioned along with JS functions by **Pardeep**.
 
 Footer and Bag page designed by **Rohit** functionality of cart done by **Aadarsh**
 
